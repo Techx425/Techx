@@ -75,23 +75,7 @@ export default function Home() {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: 0.4 }}
                     >
-                      <Link className="btn-main me-5" href="/contact">Get Started Now</Link>
-                      <div className="relative me-4">
-                        {[1, 2, 3].map((i) => (
-                          <motion.img
-                            key={i}
-                            src={`/images/testimonial/${i}.webp`}
-                            className="w-50px circle ms-min-10 shadow-lg border border-2 border-white"
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.4 + (i * 0.2) }}
-                            alt=""
-                          />
-                        ))}
-                      </div>
-                      <div className="fw-600 fs-14 lh-1-5">
-                        <span className="fs-16 fw-bold">25k+</span><br />happy customers
-                      </div>
+                      <Link className="btn-main" href="/contact">Get Started Now</Link>
                     </motion.div>
                   </div>
                 </div>
