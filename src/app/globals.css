@@ -1,12 +1,19 @@
+/* ── Theme CSS imports (must come first per CSS spec) ── */
 @import "./css/bootstrap.min.css";
 @import "./css/plugins.css";
 @import "./css/swiper.css";
 @import "./css/style.css";
 @import "./css/colors/scheme-1.css";
 
+/* ── Tailwind CSS — preflight disabled in tailwind.config.js so Bootstrap + theme CSS are untouched ── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Additional fixes for Next.js */
 :root {
-  --primary-color: #f7ca18; /* Initial scheme color if not defined */
+  --primary-color: #f7ca18;
+  /* Initial scheme color if not defined */
   --primary-color-rgb: 247, 202, 24;
 }
 
@@ -25,4 +32,98 @@ body {
 .jarallax {
   position: relative;
   z-index: 0;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Ultra Modern Classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(-10px);
+}
+
+.animate-gradient-border {
+  position: relative;
+  border-radius: 8px;
+}
+
+.animate-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg,
+      var(--primary-color),
+      #ffffff,
+      var(--primary-color),
+      #ffffff);
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: gradient-border 6s ease infinite;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+@keyframes gradient-border {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.radial-light {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(var(--primary-color-rgb), 0.15) 0%, transparent 70%);
+  z-index: -1;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.glow-number {
+  text-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.6);
+  color: var(--primary-color);
+}
+
+.parallax-section {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
