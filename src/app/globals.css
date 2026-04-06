@@ -6,9 +6,9 @@
 @import "./css/colors/scheme-1.css";
 
 /* ── Tailwind CSS — preflight disabled in tailwind.config.js so Bootstrap + theme CSS are untouched ── */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Additional fixes for Next.js */
 :root {
