@@ -154,9 +154,6 @@ export default function About() {
                                     transition={{ delay: idx * 0.1 }}
                                 >
                                     <div className="bg-white relative border-gray rounded-1 overflow-hidden group hover:shadow-2xl transition-all h-100">
-                                        <div className="overflow-hidden">
-                                            <img src={`/images/team/${member.img || '4'}.webp`} className="w-100 group-hover:scale-110 transition-transform duration-500" alt={member.name} />
-                                        </div>
                                         <div className="p-4 text-center">
                                             <h4 className="mb-0">{member.name}</h4>
                                             <p className="mb-3 text-muted">{member.role}</p>

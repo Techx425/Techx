@@ -313,7 +313,7 @@ export default function Home() {
                 { icon: Sun, val: "250", suffix: "MW", label: "Solar Capacity", delay: 0 },
                 { icon: Globe, val: "15", suffix: "+", label: "Regions Covered", delay: 0.1 },
                 { icon: Users, val: "500", suffix: "+", label: "Happy Clients", delay: 0.2 },
-                { icon: BarChart, val: "85", suffix: "%", label: "Efficiency Increase", delay: 0.3 }
+                { icon: BarChart, val: "100", suffix: "%", label: "Efficiency Increase", delay: 0.3 }
               ].map((stat, idx) => (
                 <div key={idx} className="col-lg-3 col-md-6">
                   <motion.div
@@ -359,7 +359,7 @@ export default function Home() {
               <div className="col-lg-6">
                 <div className="relative">
                   <motion.div className="bg-blur text-light text-center rounded-1 abs w-200px p-4 m-4 bottom-0 z-3 overflow-hidden shadow-2xl" {...scaleIn}>
-                    <h2 className="mb-0 id-color">325%</h2>
+                    <h2 className="mb-0 id-color">100%</h2>
                     <p className="lh-1-5 mb-0">Average Increase in Efficiency</p>
                   </motion.div>
                   <motion.div className="rounded-1 w-90 overflow-hidden shadow-2xl" {...fadeInUp}>
