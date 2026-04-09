@@ -53,7 +53,7 @@ export default function Header() {
                                         <Link href="#"><i className="icofont-location-pin"></i>4th Floor Anchor Acrade Block D, Naval Ancourage, Islamabad</Link>
                                     </div>
                                     <div className="topbar-widget me-5">
-                                        <Link href="#"><i className="icofont-phone"></i>+92 321 7558101</Link>
+                                        <Link href="#"><i className="icofont-phone"></i>051 6141110</Link>
                                     </div>
                                     <div className="topbar-widget me-5">
                                         <Link href="#"><i className="icofont-envelope"></i>ceo@techx.com</Link>

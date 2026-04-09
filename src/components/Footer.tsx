@@ -62,7 +62,7 @@ export default function Footer() {
                             <div className="fw-bold text-white d-flex align-items-center">
                                 <i className="icofont-phone me-2 id-color"></i><span>Call Us</span>
                             </div>
-                            +92 321 7558101
+                            051 6141110
 
                             <div className="spacer-20"></div>
 
