@@ -157,12 +157,12 @@ export default function About() {
                                         <div className="p-4 text-center">
                                             <h4 className="mb-0">{member.name}</h4>
                                             <p className="mb-3 text-muted">{member.role}</p>
-                                            {member.role === 'Founder and CEO' && (
-                                                <div className="social-icons s1">
-                                                    <Link href="mailto:ceo@techx.com"><i className="fa-regular fa-envelope"></i></Link>
+                                            <div className="social-icons s1 mt-3">
+                                                <Link href={`mailto:${member.role === 'Founder and CEO' ? 'ceo@techx.com' : 'info@techx.com'}`}><i className="fa-regular fa-envelope"></i></Link>
+                                                {member.role === 'Founder and CEO' && (
                                                     <Link href="https://www.linkedin.com/in/saad-sikander-659384193?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank"><i className="fa-brands fa-linkedin-in"></i></Link>
-                                                </div>
-                                            )}
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
                                 </motion.div>
