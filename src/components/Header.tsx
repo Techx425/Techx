@@ -96,9 +96,7 @@ export default function Header() {
                                     <li>
                                         <Link className="menu-item" href="/projects">Projects</Link>
                                     </li>
-                                    <li>
-                                        <Link className="menu-item" href="/upcoming-projects">Upcoming Projects</Link>
-                                    </li>
+
                                     <li>
                                         <Link className="menu-item" href="/about">About Us</Link>
                                     </li>
