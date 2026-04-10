@@ -140,7 +140,7 @@ export default function About() {
                                 { name: "Engr.Ansar Abbas", role: "Electrical Supervision" },
                                 { name: "Raja Azhar", role: "Manager Operatiom" },
                                 { name: "Engr Hashim Abbasi", role: "Assistant Manager" },
-                                { name: "Isha Azeem", role: "Team Member" }
+                                { name: "Isha Azeem", role: "Social Media Manager" }
 
 
 
