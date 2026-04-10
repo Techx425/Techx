@@ -49,9 +49,7 @@ export default function Header() {
                         <div className="col-lg-12">
                             <div className="d-flex justify-content-between xs-hide">
                                 <div className="d-flex">
-                                    <div className="topbar-widget me-5">
-                                        <Link href="#"><i className="icofont-location-pin"></i>4th Floor Anchor Acrade Block D, Naval Ancourage, Islamabad</Link>
-                                    </div>
+
                                     <div className="topbar-widget me-5">
                                         <Link href="#"><i className="icofont-phone"></i>051 6141110</Link>
                                     </div>
