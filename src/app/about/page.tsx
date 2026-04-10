@@ -130,7 +130,7 @@ export default function About() {
                                 { name: "Engr. Saad Sikander", role: "Founder and CEO", img: "1" },
                                 { name: "Air Commodore (Retd.) Sikander Niaz (TI M)", role: "Chairman", img: "2" },
                                 { name: "Mrs. Amina Sikander", role: "Board Member", img: "3" },
-                                { name: "Mr. Fahad Sikander", role: "Project Manager", img: "4" },
+                                { name: "Mr. Fahad Sikander", role: "Project Manager", img: "4", email: "pm@techx.com.pk" },
                                 { name: "Engr. Umair ur Rehman", role: "Snr. Mgr and CTO", img: "4" },
                                 { name: "Dr. Atif Naveed Khan", role: "Director Technical and Projects", img: "4" },
                                 { name: "Mr. Rizwan", role: "Senior Supervisor", img: "4" },
