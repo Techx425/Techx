@@ -14,87 +14,111 @@ const projects = [
     {
         id: 1,
         title: 'Sadaqat Solar Plant',
-        category: 'Solar Power Projects',
+        capacity: '12 MW',
+        location: 'Faisalabad',
         img: '/images/projects/1.webp',
-        desc: 'Complete EPC and O&M services for Sadaqat Limited\'s industrial solar power plant.'
+        desc: 'Complete engineering, procurement, construction, and ongoing operations & maintenance services for Sadaqat Limited\'s industrial solar power plant.',
+        tags: ['EPC Services', 'O&M Services', 'Grid Integration'],
     },
     {
         id: 2,
         title: 'Dewan Cement Solar',
-        category: 'Solar Power Projects',
+        capacity: '8 MW',
+        location: 'Karachi',
         img: '/images/projects/2.webp',
-        desc: 'Industrial solar solution for cement manufacturing facility.'
+        desc: 'Full-scale industrial solar solution for Dewan Cement\'s manufacturing facility, reducing grid dependency and cutting operational energy costs.',
+        tags: ['EPC Services', 'Industrial Solar', 'Energy Audit'],
     },
     {
         id: 3,
         title: 'Ittehad Steel Solar Plant',
-        category: 'Solar Power Projects',
+        capacity: '5 MW',
+        location: 'Lahore',
         img: '/images/projects/3.webp',
-        desc: 'Specialized electrical engineering and maintenance services.'
+        desc: 'Specialized electrical engineering and maintenance services for Ittehad Steel\'s on-site solar generation facility.',
+        tags: ['O&M Services', 'Electrical Engineering', 'Solar PV'],
     },
     {
         id: 4,
-        title: 'Uch Shareef Motorway Solar Plant',
-        category: 'Solar Power Projects',
+        title: 'Uch Shareef Motorway Solar',
+        capacity: '3 MW',
+        location: 'Uch Shareef',
         img: '/images/projects/4.webp',
-        desc: 'Highway infrastructure solar power solution.'
+        desc: 'Highway infrastructure solar power solution providing clean energy to motorway service areas and administrative buildings.',
+        tags: ['Infrastructure', 'EPC Services', 'Grid Integration'],
     },
     {
         id: 5,
         title: 'Rajhana Motorway Solar Plant',
-        category: 'Solar Power Projects',
+        capacity: '4 MW',
+        location: 'Rajhana',
         img: '/images/projects/5.webp',
-        desc: 'Motorway infrastructure solar power solution.'
+        desc: 'Motorway infrastructure solar power solution deployed across multiple service zones to ensure uninterrupted power supply.',
+        tags: ['Infrastructure', 'Solar PV', 'O&M Services'],
     },
     {
         id: 6,
         title: 'LPG Supply Network',
-        category: 'Energy Trading Projects',
+        capacity: 'N/A',
+        location: 'Nationwide',
         img: '/images/projects/6.webp',
-        desc: 'Comprehensive LPG supply and distribution network across Pakistan.'
+        desc: 'Comprehensive LPG sourcing and distribution network across Pakistan, importing refined fuels from the Middle East.',
+        tags: ['Energy Trading', 'LPG', 'Distribution'],
     },
     {
         id: 7,
         title: 'Gwadar Energy Port',
-        category: 'Infrastructure Projects',
+        capacity: 'N/A',
+        location: 'Gwadar',
         img: '/images/background/1.webp',
-        desc: 'Major port infrastructure for energy imports and exports.'
+        desc: 'Major port infrastructure development enabling large-scale energy imports and exports through the strategic Gwadar deep-sea port.',
+        tags: ['Infrastructure', 'Port Development', 'Logistics'],
     },
     {
         id: 8,
         title: 'Utility-Scale Solar Feasibility',
-        category: 'Energy Development Projects',
+        capacity: '50 MW',
+        location: 'Punjab',
         img: '/images/background/2.webp',
-        desc: 'Comprehensive feasibility study for utility-scale solar development.'
+        desc: 'Comprehensive feasibility study and design for a utility-scale solar power development, including funding arrangement and grid interconnection planning.',
+        tags: ['Feasibility Study', 'Energy Development', 'Grid Integration'],
     },
     {
         id: 9,
         title: 'Market Intelligence System',
-        category: 'Energy Trading Projects',
+        capacity: 'N/A',
+        location: 'Islamabad',
         img: '/images/background/3.webp',
-        desc: 'Advanced market intelligence and trading analytics platform.'
+        desc: 'Advanced market intelligence and trading analytics platform enabling real-time energy market data analysis and procurement optimization.',
+        tags: ['Energy Trading', 'Analytics', 'Technology'],
     },
     {
         id: 10,
         title: 'Lahore Distribution Center',
-        category: 'Infrastructure Projects',
+        capacity: 'N/A',
+        location: 'Lahore',
         img: '/images/background/4.webp',
-        desc: 'Energy distribution and storage infrastructure.'
+        desc: 'State-of-the-art energy distribution and storage infrastructure hub serving industrial and commercial clients across central Punjab.',
+        tags: ['Infrastructure', 'Distribution', 'Storage'],
     },
     {
         id: 11,
         title: 'Faisalabad Industrial Hub',
-        category: 'Infrastructure Projects',
+        capacity: '6 MW',
+        location: 'Faisalabad',
         img: '/images/background/5.webp',
-        desc: 'Industrial energy infrastructure development.'
+        desc: 'Industrial energy infrastructure development providing integrated solar and grid power management for Faisalabad\'s manufacturing sector.',
+        tags: ['Industrial Solar', 'EPC Services', 'Grid Management'],
     },
     {
         id: 12,
         title: 'Energy Project Management',
-        category: 'Energy Development Projects',
+        capacity: 'N/A',
+        location: 'Pakistan',
         img: '/images/background/6.webp',
-        desc: 'End-to-end project management for energy development projects.'
-    }
+        desc: 'End-to-end project management services covering planning, procurement, construction oversight, and commissioning for energy development projects.',
+        tags: ['Project Management', 'Energy Development', 'Consulting'],
+    },
 ];
 
 export default function Projects() {
@@ -129,25 +153,54 @@ export default function Projects() {
                                 <motion.div
                                     key={project.id}
                                     className="col-lg-4 col-md-6"
-                                    initial={{ opacity: 0, y: 20 }}
+                                    initial={{ opacity: 0, y: 24 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: idx * 0.1 }}
+                                    transition={{ delay: idx * 0.08, duration: 0.5 }}
                                 >
-                                    <div className="hover group rounded-1 overflow-hidden shadow-lg bg-white h-100 d-flex flex-column">
-                                        <div className="relative overflow-hidden aspect-video">
-                                            <img src={project.img} className="w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-700" alt={project.title} />
-                                            <div className="abs top-0 start-0 m-3 z-3">
-                                                <span className="badge bg-warning text-dark px-3 py-2 fs-12 uppercase fw-bold shadow-sm">{project.category}</span>
-                                            </div>
+                                    <div style={cardStyle}>
+                                        {/* Image */}
+                                        <div style={imgWrapStyle}>
+                                            <img
+                                                src={project.img}
+                                                alt={project.title}
+                                                style={imgStyle}
+                                            />
                                         </div>
-                                        <div className="p-4 flex-grow-1 d-flex flex-column">
-                                            <h4 className="mb-2">{project.title}</h4>
-                                            <p className="text-muted fs-15 flex-grow-1">{project.desc}</p>
-                                            <div className="mt-3 pt-3 border-top">
-                                                <Link href="/contact" className="text-dark fw-bold fs-14 hover-color d-flex align-items-center">
-                                                    View Details <i className="icofont-arrow-right ms-2 mt-1"></i>
-                                                </Link>
+
+                                        {/* Body */}
+                                        <div style={bodyStyle}>
+                                            {/* Title Row */}
+                                            <div style={titleRowStyle}>
+                                                <h4 style={titleStyle}>{project.title}</h4>
+                                                <span style={badgeStyle}>&nbsp;</span>
+                                            </div>
+
+                                            <div style={dividerStyle}></div>
+
+                                            {/* Meta Row */}
+                                            <div style={metaRowStyle}>
+                                                <div style={metaItemStyle}>
+                                                    <span style={metaLabelStyle}>Capacity</span>
+                                                    <span style={metaValueStyle}>{project.capacity}</span>
+                                                </div>
+                                                <div style={metaItemStyle}>
+                                                    <span style={metaLabelStyle}>Location</span>
+                                                    <span style={metaValueStyle}>
+                                                        {project.location}
+                                                        <span style={dotStyle}>.</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            {/* Description */}
+                                            <p style={descStyle}>{project.desc}</p>
+
+                                            {/* Tags */}
+                                            <div style={tagsStyle}>
+                                                {project.tags.map((tag) => (
+                                                    <span key={tag} style={tagStyle}>{tag}</span>
+                                                ))}
                                             </div>
                                         </div>
                                     </div>
@@ -184,3 +237,123 @@ export default function Projects() {
         </main>
     );
 }
+
+/* ── Inline styles matching the reference card design ── */
+
+const cardStyle: React.CSSProperties = {
+    background: '#ffffff',
+    borderRadius: '14px',
+    overflow: 'hidden',
+    boxShadow: '0 2px 16px rgba(0,0,0,0.10)',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100%',
+    transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+};
+
+const imgWrapStyle: React.CSSProperties = {
+    width: '100%',
+    aspectRatio: '16/10',
+    overflow: 'hidden',
+};
+
+const imgStyle: React.CSSProperties = {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    display: 'block',
+    transition: 'transform 0.5s ease',
+};
+
+const bodyStyle: React.CSSProperties = {
+    padding: '20px 22px 18px',
+    display: 'flex',
+    flexDirection: 'column',
+    flexGrow: 1,
+};
+
+const titleRowStyle: React.CSSProperties = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: '12px',
+    marginBottom: '4px',
+};
+
+const titleStyle: React.CSSProperties = {
+    fontSize: '1.1rem',
+    fontWeight: 700,
+    color: '#111111',
+    margin: 0,
+    lineHeight: 1.3,
+};
+
+const badgeStyle: React.CSSProperties = {
+    minWidth: '60px',
+    height: '28px',
+    borderRadius: '6px',
+    background: '#F5A623',
+    flexShrink: 0,
+    display: 'inline-block',
+};
+
+const dividerStyle: React.CSSProperties = {
+    borderTop: '1px solid #ebebeb',
+    margin: '14px 0',
+};
+
+const metaRowStyle: React.CSSProperties = {
+    display: 'flex',
+    gap: '32px',
+    marginBottom: '14px',
+};
+
+const metaItemStyle: React.CSSProperties = {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '2px',
+};
+
+const metaLabelStyle: React.CSSProperties = {
+    fontSize: '0.75rem',
+    color: '#999',
+    fontWeight: 500,
+    letterSpacing: '0.02em',
+};
+
+const metaValueStyle: React.CSSProperties = {
+    fontSize: '0.95rem',
+    fontWeight: 700,
+    color: '#111',
+};
+
+const dotStyle: React.CSSProperties = {
+    color: '#e02020',
+    fontWeight: 900,
+};
+
+const descStyle: React.CSSProperties = {
+    fontSize: '0.88rem',
+    color: '#444',
+    lineHeight: 1.65,
+    margin: '0 0 16px',
+    flexGrow: 1,
+};
+
+const tagsStyle: React.CSSProperties = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '8px',
+    marginTop: 'auto',
+};
+
+const tagStyle: React.CSSProperties = {
+    fontSize: '0.75rem',
+    fontWeight: 600,
+    color: '#333',
+    border: '1px solid #ddd',
+    borderRadius: '6px',
+    padding: '4px 10px',
+    background: '#fafafa',
+    letterSpacing: '0.01em',
+};
