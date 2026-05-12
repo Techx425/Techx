@@ -20,14 +20,21 @@ export default function Contact() {
         setIsSubmitting(true);
         setResult(null);
 
-        const formData = new FormData(event.currentTarget);
-        const response = await submitContactForm(formData);
-
-        setResult(response);
-        setIsSubmitting(false);
-
-        if (response.success) {
-            (event.target as HTMLFormElement).reset();
+        try {
+            const formData = new FormData(event.currentTarget);
+            const response = await submitContactForm(formData);
+            setResult(response);
+            if (response.success) {
+                (event.target as HTMLFormElement).reset();
+            }
+        } catch (err) {
+            console.error('Submit error:', err);
+            setResult({
+                success: false,
+                message: 'Something went wrong. Please try again or contact us on WhatsApp.',
+            });
+        } finally {
+            setIsSubmitting(false);
         }
     }
 
