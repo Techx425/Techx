@@ -47,6 +47,7 @@ export async function submitContactForm(formData: FormData) {
             await transporter.sendMail({
                 from: `"TechX Contact Form" <${process.env.SMTP_USER}>`,
                 to: process.env.CEO_EMAIL || 'ceo@techx.com.pk',
+                cc: process.env.SALES_EMAIL || 'sales@techx.com.pk',
                 replyTo: data.email,
                 subject: `New Contact Form Submission from ${data.name}`,
                 html: `
@@ -98,6 +99,7 @@ export async function submitContactForm(formData: FormData) {
                             <ul style="color: #444; line-height: 2;">
                                 <li>📞 Phone: <a href="tel:+923217558101">+92 321 7558101</a></li>
                                 <li>💬 WhatsApp: <a href="https://wa.me/923435609624">+92 343 5609624</a></li>
+                                <li>📧 Sales: <a href="mailto:sales@techx.com.pk">sales@techx.com.pk</a></li>
                             </ul>
                             <p style="color: #888; font-size: 13px; margin-top: 24px;">— TechX Pvt Ltd Team</p>
                         </div>
