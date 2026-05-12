@@ -1,7 +1,9 @@
 'use server';
 
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 import { prisma } from '@/lib/prisma';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function submitContactForm(formData: FormData) {
     try {
@@ -32,22 +34,12 @@ export async function submitContactForm(formData: FormData) {
             console.error('⚠️ Database save failed (continuing anyway):', dbError);
         }
 
-        // --- 2. Send Email to CEO ---
+        // --- 2. Email to CEO + Sales ---
         try {
-            const transporter = nodemailer.createTransport({
-                host: process.env.SMTP_HOST || 'smtp.gmail.com',
-                port: Number(process.env.SMTP_PORT) || 587,
-                secure: false,
-                auth: {
-                    user: process.env.SMTP_USER,
-                    pass: process.env.SMTP_PASS,
-                },
-            });
-
-            await transporter.sendMail({
-                from: `"TechX Contact Form" <${process.env.SMTP_USER}>`,
-                to: process.env.CEO_EMAIL || 'ceo@techx.com.pk',
-                cc: process.env.SALES_EMAIL || 'sales@techx.com.pk',
+            await resend.emails.send({
+                from: 'TechX Contact Form <onboarding@resend.dev>',
+                to: [process.env.CEO_EMAIL || 'ceo@techx.com.pk'],
+                cc: [process.env.SALES_EMAIL || 'sales@techx.com.pk'],
                 replyTo: data.email,
                 subject: `New Contact Form Submission from ${data.name}`,
                 html: `
@@ -76,17 +68,22 @@ export async function submitContactForm(formData: FormData) {
                                 </tr>
                             </table>
                             <div style="margin-top: 24px; padding: 16px; background: #fff8ee; border-left: 4px solid #F5A623; border-radius: 4px;">
-                                <p style="margin: 0; color: #888; font-size: 13px;">This message was submitted via the TechX website contact form. Reply directly to this email to respond to the client.</p>
+                                <p style="margin: 0; color: #888; font-size: 13px;">Submitted via TechX website. Reply to this email to respond to the client.</p>
                             </div>
                         </div>
                     </div>
                 `,
             });
+            console.log('✅ CEO/Sales email sent');
+        } catch (emailError) {
+            console.error('⚠️ CEO email failed:', emailError);
+        }
 
-            // Auto-reply to the client
-            await transporter.sendMail({
-                from: `"TechX Pvt Ltd" <${process.env.SMTP_USER}>`,
-                to: data.email,
+        // --- 3. Auto-reply to client ---
+        try {
+            await resend.emails.send({
+                from: 'TechX Pvt Ltd <onboarding@resend.dev>',
+                to: [data.email],
                 subject: `We received your message, ${data.name}!`,
                 html: `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -106,29 +103,25 @@ export async function submitContactForm(formData: FormData) {
                     </div>
                 `,
             });
-
-            console.log('✅ Emails sent');
-        } catch (emailError) {
-            console.error('⚠️ Email send failed:', emailError);
+            console.log('✅ Auto-reply sent to client');
+        } catch (replyError) {
+            console.error('⚠️ Auto-reply failed:', replyError);
         }
 
-        // --- 3. Auto WhatsApp Notification (CallMeBot) ---
+        // --- 4. WhatsApp Notification (CallMeBot) ---
         const callMeBotApiKey = process.env.CALLMEBOT_API_KEY;
         const whatsappNumber = process.env.WHATSAPP_NUMBER || '923435609624';
 
         if (callMeBotApiKey) {
             try {
                 const waMessage = encodeURIComponent(
-                    `🔔 New TechX Contact Form\n\n👤 Name: ${data.name}\n📧 Email: ${data.email}\n📞 Phone: ${data.phone}\n\n💬 Message: ${data.message}`
+                    `🔔 New TechX Inquiry\n\n👤 ${data.name}\n📧 ${data.email}\n📞 ${data.phone}\n\n💬 ${data.message}`
                 );
-                const waUrl = `https://api.callmebot.com/whatsapp.php?phone=${whatsappNumber}&text=${waMessage}&apikey=${callMeBotApiKey}`;
-                const waRes = await fetch(waUrl);
-                console.log('✅ WhatsApp notification sent:', waRes.status);
+                await fetch(`https://api.callmebot.com/whatsapp.php?phone=${whatsappNumber}&text=${waMessage}&apikey=${callMeBotApiKey}`);
+                console.log('✅ WhatsApp notification sent');
             } catch (waError) {
                 console.error('⚠️ WhatsApp notification failed:', waError);
             }
-        } else {
-            console.log('ℹ️ CALLMEBOT_API_KEY not set — WhatsApp notification skipped');
         }
 
         return {
