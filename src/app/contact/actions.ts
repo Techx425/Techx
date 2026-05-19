@@ -1,9 +1,7 @@
 'use server';
 
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import { prisma } from '@/lib/prisma';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function submitContactForm(formData: FormData) {
     try {
@@ -14,12 +12,11 @@ export async function submitContactForm(formData: FormData) {
             message: formData.get('message') as string,
         };
 
-        // Validate required fields
         if (!data.name || !data.email || !data.phone || !data.message) {
             return { success: false, message: 'All fields are required.' };
         }
 
-        // --- 1. Save to Database ---
+        // --- 1. Save to Neon DB ---
         try {
             await prisma.contactSubmission.create({
                 data: {
@@ -31,17 +28,31 @@ export async function submitContactForm(formData: FormData) {
             });
             console.log('✅ Saved to database');
         } catch (dbError) {
-            console.error('⚠️ Database save failed (continuing anyway):', dbError);
+            console.error('⚠️ DB save failed:', dbError);
         }
 
-        // --- 2. Email to CEO + Sales ---
+        // --- 2. Create SMTP Transporter (port 465 SSL — works on Vercel) ---
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_HOST || 'mail.techx.com.pk',
+            port: 465,
+            secure: true, // SSL
+            auth: {
+                user: process.env.SMTP_USER || 'developer@techx.com.pk',
+                pass: process.env.SMTP_PASS,
+            },
+            tls: {
+                rejectUnauthorized: false,
+            },
+        });
+
+        // --- 3. Email to CEO + Sales ---
         try {
-            await resend.emails.send({
-                from: 'TechX Contact Form <onboarding@resend.dev>',
-                to: [process.env.CEO_EMAIL || 'ceo@techx.com.pk'],
-                cc: [process.env.SALES_EMAIL || 'sales@techx.com.pk'],
+            await transporter.sendMail({
+                from: `"TechX Contact Form" <${process.env.SMTP_USER || 'developer@techx.com.pk'}>`,
+                to: process.env.CEO_EMAIL || 'ceo@techx.com.pk',
+                cc: process.env.SALES_EMAIL || 'sales@techx.com.pk',
                 replyTo: data.email,
-                subject: `New Contact Form Submission from ${data.name}`,
+                subject: `New Inquiry from ${data.name} — TechX Website`,
                 html: `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #f9f9f9; border-radius: 8px;">
                         <div style="background: #1a1a2e; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
@@ -50,25 +61,13 @@ export async function submitContactForm(formData: FormData) {
                         </div>
                         <div style="background: #fff; padding: 24px; border-radius: 0 0 8px 8px;">
                             <table style="width:100%; border-collapse: collapse;">
-                                <tr>
-                                    <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555; width: 120px;">Name</td>
-                                    <td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #222;">${data.name}</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Email</td>
-                                    <td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #222;"><a href="mailto:${data.email}">${data.email}</a></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Phone</td>
-                                    <td style="padding: 10px 0; border-bottom: 1px solid #eee; color: #222;"><a href="tel:${data.phone}">${data.phone}</a></td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px 0; font-weight: bold; color: #555; vertical-align: top;">Message</td>
-                                    <td style="padding: 10px 0; color: #222; line-height: 1.6;">${data.message.replace(/\n/g, '<br/>')}</td>
-                                </tr>
+                                <tr><td style="padding:10px 0;border-bottom:1px solid #eee;font-weight:bold;color:#555;width:120px;">Name</td><td style="padding:10px 0;border-bottom:1px solid #eee;color:#222;">${data.name}</td></tr>
+                                <tr><td style="padding:10px 0;border-bottom:1px solid #eee;font-weight:bold;color:#555;">Email</td><td style="padding:10px 0;border-bottom:1px solid #eee;color:#222;"><a href="mailto:${data.email}">${data.email}</a></td></tr>
+                                <tr><td style="padding:10px 0;border-bottom:1px solid #eee;font-weight:bold;color:#555;">Phone</td><td style="padding:10px 0;border-bottom:1px solid #eee;color:#222;"><a href="tel:${data.phone}">${data.phone}</a></td></tr>
+                                <tr><td style="padding:10px 0;font-weight:bold;color:#555;vertical-align:top;">Message</td><td style="padding:10px 0;color:#222;line-height:1.6;">${data.message.replace(/\n/g, '<br/>')}</td></tr>
                             </table>
-                            <div style="margin-top: 24px; padding: 16px; background: #fff8ee; border-left: 4px solid #F5A623; border-radius: 4px;">
-                                <p style="margin: 0; color: #888; font-size: 13px;">Submitted via TechX website. Reply to this email to respond to the client.</p>
+                            <div style="margin-top:24px;padding:16px;background:#fff8ee;border-left:4px solid #F5A623;border-radius:4px;">
+                                <p style="margin:0;color:#888;font-size:13px;">Submitted via TechX website. Reply to this email to respond to the client.</p>
                             </div>
                         </div>
                     </div>
@@ -79,11 +78,11 @@ export async function submitContactForm(formData: FormData) {
             console.error('⚠️ CEO email failed:', emailError);
         }
 
-        // --- 3. Auto-reply to client ---
+        // --- 4. Auto-reply to client ---
         try {
-            await resend.emails.send({
-                from: 'TechX Pvt Ltd <onboarding@resend.dev>',
-                to: [data.email],
+            await transporter.sendMail({
+                from: `"TechX Pvt Ltd" <${process.env.SMTP_USER || 'developer@techx.com.pk'}>`,
+                to: data.email,
                 subject: `We received your message, ${data.name}!`,
                 html: `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
@@ -92,7 +91,7 @@ export async function submitContactForm(formData: FormData) {
                         </div>
                         <div style="background: #fff; padding: 24px; border-radius: 0 0 8px 8px; border: 1px solid #eee;">
                             <p style="color: #444; line-height: 1.7;">Thank you for reaching out to <strong>TechX Pvt Ltd</strong>. We have received your message and our team will get back to you within <strong>24 hours</strong>.</p>
-                            <p style="color: #444;">For urgent inquiries, feel free to contact us directly:</p>
+                            <p style="color: #444;">For urgent inquiries:</p>
                             <ul style="color: #444; line-height: 2;">
                                 <li>📞 Phone: <a href="tel:+923217558101">+92 321 7558101</a></li>
                                 <li>💬 WhatsApp: <a href="https://wa.me/923435609624">+92 343 5609624</a></li>
@@ -103,25 +102,9 @@ export async function submitContactForm(formData: FormData) {
                     </div>
                 `,
             });
-            console.log('✅ Auto-reply sent to client');
+            console.log('✅ Auto-reply sent');
         } catch (replyError) {
             console.error('⚠️ Auto-reply failed:', replyError);
-        }
-
-        // --- 4. WhatsApp Notification (CallMeBot) ---
-        const callMeBotApiKey = process.env.CALLMEBOT_API_KEY;
-        const whatsappNumber = process.env.WHATSAPP_NUMBER || '923435609624';
-
-        if (callMeBotApiKey) {
-            try {
-                const waMessage = encodeURIComponent(
-                    `🔔 New TechX Inquiry\n\n👤 ${data.name}\n📧 ${data.email}\n📞 ${data.phone}\n\n💬 ${data.message}`
-                );
-                await fetch(`https://api.callmebot.com/whatsapp.php?phone=${whatsappNumber}&text=${waMessage}&apikey=${callMeBotApiKey}`);
-                console.log('✅ WhatsApp notification sent');
-            } catch (waError) {
-                console.error('⚠️ WhatsApp notification failed:', waError);
-            }
         }
 
         return {
