@@ -140,8 +140,8 @@ export default function About() {
                                 { name: "Engr.Ansar Abbas", role: "Electrical Supervision" },
                                 { name: "Raja Azhar", role: "Manager Operatiom", email: "azhar@techx.com.pk" },
                                 { name: "Engr Hashim Abbasi", role: "Assistant Manager" },
-                                { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" }
-                                { name: "Muhammad Abdullah", role: "Web Designer", email: "binarywren@gmail.com" }
+                                { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" },
+                                { name: "Muhammad Abdullah", role: "Web Designer", email: "developer@techx.com.pk" }
 
 
 
