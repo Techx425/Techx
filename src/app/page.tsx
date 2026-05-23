@@ -98,28 +98,7 @@ export default function Home() {
                   <span className="op-3"> We help our clients source energy and power that works for their unique needs and suits their budgets. Not just a vendor, we work as partners with industries across Pakistan, to help them assess the right solution for their requirements.</span>
                 </motion.h3>
 
-                <div className="spacer-single"></div>
 
-                <div className="row g-4 gx-5">
-                  {[
-                    { val: "100K+", label: "Solar Panels Installed" },
-                    { val: "25K+", label: "Homes Powered" },
-                    { val: "16+", label: "Years of Expertise" }
-                  ].map((stat, idx) => (
-                    <div key={idx} className="col-md-3 col-sm-6">
-                      <motion.div
-                        className="de_count lh-1-6"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 * (idx + 1) }}
-                      >
-                        <h3 className="fs-40 mb-0 id-color">{stat.val}</h3>
-                        {stat.label}
-                      </motion.div>
-                    </div>
-                  ))}
-                </div>
               </div>
             </div>
           </div>
