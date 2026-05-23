@@ -543,7 +543,7 @@ export default function Home() {
                         <i className="icofont-rounded-down" style={{ transform: openFaqIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}></i>
                       </div>
                       {openFaqIndex === idx && (
-                        <div className="accordion-section-content p-3 text-muted">
+                        <div className="accordion-section-content p-3 text-muted" style={{ display: 'block' }}>
                           {faq.a}
                         </div>
                       )}
