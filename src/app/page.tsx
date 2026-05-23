@@ -462,50 +462,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="bg-color-2 no-top no-bottom overflow-hidden relative">
-          <div className="container-fluid relative half-fluid">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-6 position-lg-absolute left-half h-100" style={{ minHeight: '600px' }}>
-                  <div className="abs w-100 h-100 top-0 start-0" style={{ backgroundImage: 'url(/images/misc/s2.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-                  <div className="abs w-100 h-100 bg-dark/20 top-0 start-0"></div>
-                </div>
-                <div className="col-lg-5 offset-lg-7 py-5 my-5">
-                  <Swiper
-                    modules={[Autoplay, Pagination]}
-                    spaceBetween={30}
-                    slidesPerView={1}
-                    loop={true}
-                    autoplay={{ delay: 5000 }}
-                    pagination={{ clickable: true }}
-                    className="testimonial-swiper"
-                  >
-                    {[
-                      { name: "Alex Morgan", text: "Switching to solar with TechX was the best decision we made. Lower bills, clean energy, and outstanding support." },
-                      { name: "Sarah Johnson", text: "The installation was fast and professional. We're already seeing a 70% reduction in our monthly utility costs!" },
-                      { name: "Michael Chen", text: "Their monitoring system is amazing. I can see exactly how much energy my roof is producing in real-time." }
-                    ].map((t, idx) => (
-                      <SwiperSlide key={idx}>
-                        <div className="py-4">
-                          <i className="icofont-quote-left id-color fs-60 d-block mb-4"></i>
-                          <h3 className="mb-4 lh-1-4">{t.text}</h3>
-                          <div className="d-flex align-items-center">
-                            <img src={`/images/testimonial/${idx + 1}.webp`} className="w-60px circle me-3 shadow" alt="" />
-                            <div>
-                              <h5 className="mb-0">{t.name}</h5>
-                              <span className="text-muted fs-14">Verified Customer</span>
-                            </div>
-                          </div>
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section>
