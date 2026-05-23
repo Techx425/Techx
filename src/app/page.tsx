@@ -28,6 +28,7 @@ const scaleIn = {
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -534,13 +535,18 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ delay: idx * 0.1 }}
                     >
-                      <div className="accordion-section-title p-3 fw-600 cursor-pointer d-flex justify-content-between align-items-center bg-light">
+                      <div 
+                        className="accordion-section-title p-3 fw-600 cursor-pointer d-flex justify-content-between align-items-center bg-light"
+                        onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
+                      >
                         {faq.q}
-                        <i className="icofont-rounded-down"></i>
+                        <i className="icofont-rounded-down" style={{ transform: openFaqIndex === idx ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }}></i>
                       </div>
-                      <div className="accordion-section-content p-3 text-muted">
-                        {faq.a}
-                      </div>
+                      {openFaqIndex === idx && (
+                        <div className="accordion-section-content p-3 text-muted">
+                          {faq.a}
+                        </div>
+                      )}
                     </motion.div>
                   ))}
                 </div>
