@@ -70,62 +70,74 @@ export default function Contact() {
                                     <h3>Send Us a Message</h3>
                                     <p className="lead">Have a question or want to start a project? Fill out the form below and our team will get back to you within 24 hours.</p>
 
-                                    <form onSubmit={handleSubmit} className="form-s1">
-                                        <div className="row g-4">
-                                            <div className="col-md-6">
-                                                <div className="field-set">
-                                                    <input type="text" name="name" className="form-control" placeholder="Your Name" required />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="field-set">
-                                                    <input type="email" name="email" className="form-control" placeholder="Your Email" required />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12">
-                                                <div className="field-set">
-                                                    <input type="text" name="phone" className="form-control" placeholder="Your Phone" required />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12">
-                                                <div className="field-set">
-                                                    <textarea name="message" className="form-control" placeholder="Your Message" rows={5} required></textarea>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12">
-                                                <div id="submit" className="mt-3">
-                                                    <button
-                                                        type="submit"
-                                                        className="btn-main fx-slide"
-                                                        disabled={isSubmitting}
-                                                    >
-                                                        <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                    {result && (
+                                    {result?.success ? (
                                         <motion.div
-                                            className={`mt-4 p-4 rounded-1 ${result.success ? 'bg-success/10 text-success border border-success/20' : 'bg-danger/10 text-danger border border-danger/20'}`}
+                                            className="mt-4 p-5 rounded-3 bg-success/10 text-success border border-success/20 text-center"
                                             initial={{ opacity: 0, scale: 0.95 }}
                                             animate={{ opacity: 1, scale: 1 }}
                                         >
-                                            <p className="mb-0">{result.message}</p>
-                                            {result.success && result.data && (
-                                                <div className="mt-3">
-                                                    <Link 
-                                                        href={`https://wa.me/923435609624?text=${encodeURIComponent(`Hello TechX! I have just submitted a contact form on your website.\n\n*Name:* ${result.data.name}\n*Email:* ${result.data.email}\n*Phone:* ${result.data.phone}\n*Message:* ${result.data.message}`)}`} 
-                                                        target="_blank" 
-                                                        className="btn-main fx-slide" 
-                                                        style={{ backgroundColor: '#25D366' }}
-                                                    >
-                                                        <span><i className="fa-brands fa-whatsapp me-2 text-white"></i>Send Details to WhatsApp</span>
-                                                    </Link>
-                                                </div>
+                                            <i className="fa-solid fa-circle-check fs-1 mb-3"></i>
+                                            <h4>Thank You!</h4>
+                                            <p className="mb-4">{result.message}</p>
+                                            {result.data && (
+                                                <Link 
+                                                    href={`https://wa.me/923435609624?text=${encodeURIComponent(`Hello TechX! I have just submitted a contact form on your website.\n\n*Name:* ${result.data.name}\n*Email:* ${result.data.email}\n*Phone:* ${result.data.phone}\n*Message:* ${result.data.message}`)}`} 
+                                                    target="_blank" 
+                                                    className="btn-main fx-slide d-inline-block" 
+                                                    style={{ backgroundColor: '#25D366' }}
+                                                >
+                                                    <span><i className="fa-brands fa-whatsapp me-2 text-white"></i>Send Details to WhatsApp</span>
+                                                </Link>
                                             )}
                                         </motion.div>
+                                    ) : (
+                                        <>
+                                            <form onSubmit={handleSubmit} className="form-s1">
+                                                <div className="row g-4">
+                                                    <div className="col-md-6">
+                                                        <div className="field-set">
+                                                            <input type="text" name="name" className="form-control" placeholder="Your Name" required />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <div className="field-set">
+                                                            <input type="email" name="email" className="form-control" placeholder="Your Email" required />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <div className="field-set">
+                                                            <input type="text" name="phone" className="form-control" placeholder="Your Phone" required />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <div className="field-set">
+                                                            <textarea name="message" className="form-control" placeholder="Your Message" rows={5} required></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-12">
+                                                        <div id="submit" className="mt-3">
+                                                            <button
+                                                                type="submit"
+                                                                className="btn-main fx-slide"
+                                                                disabled={isSubmitting}
+                                                            >
+                                                                <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+        
+                                            {result && !result.success && (
+                                                <motion.div
+                                                    className="mt-4 p-4 rounded-1 bg-danger/10 text-danger border border-danger/20"
+                                                    initial={{ opacity: 0, scale: 0.95 }}
+                                                    animate={{ opacity: 1, scale: 1 }}
+                                                >
+                                                    <p className="mb-0">{result.message}</p>
+                                                </motion.div>
+                                            )}
+                                        </>
                                     )}
                                 </motion.div>
                             </div>
