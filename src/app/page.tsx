@@ -312,7 +312,7 @@ export default function Home() {
               {[
                 { icon: Sun, val: "75", suffix: "MW", label: "Solar Capacity", delay: 0 },
                 { icon: Globe, val: "8", suffix: "+", label: "Cities Covered", delay: 0.1 },
-                { icon: Users, val: "500", suffix: "+", label: "Happy Clients", delay: 0.2 },
+                { icon: Users, val: "10", suffix: "+", label: "Happy Clients", delay: 0.2 },
                 { icon: BarChart, val: "100", suffix: "%", label: "Efficiency Increase", delay: 0.3 }
               ].map((stat, idx) => (
                 <div key={idx} className="col-lg-3 col-md-6">
