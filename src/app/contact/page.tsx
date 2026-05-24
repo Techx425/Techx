@@ -59,7 +59,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="gradient-edge-bottom h-50"></div>
-                    <div className="sw-overlay"></div>
+                    <div className="sw-overlay op-3"></div>
                 </section>
 
                 <section>
