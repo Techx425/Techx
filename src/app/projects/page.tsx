@@ -41,7 +41,7 @@ const projects = [
     {
         id: 4,
         title: 'Uch Shareef Motorway Solar',
-        capacity: '3 MW',
+        capacity: '660 KW',
         location: 'Uch Shareef',
         img: '/images/projects/moterway.jpeg',
         desc: 'Highway infrastructure solar power solution providing clean energy to motorway service areas and administrative buildings.',
