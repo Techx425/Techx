@@ -82,7 +82,7 @@ export default function Services() {
                                         <div className="relative overflow-hidden">
                                             <Link href={`/services/${service.slug}`} className="d-block">
                                                 <div className="relative overflow-hidden rounded-1">
-                                                    <img src={service.img} className="w-100 hover-scale-1-2" alt={service.title} />
+                                                    <img src={service.img} className="w-100 hover-scale-1-2" alt={service.title} style={{ aspectRatio: '4/3', objectFit: 'cover' }} />
                                                 </div>
                                             </Link>
                                             <div className="p-30 relative bg-white rounded-1 mx-4 mt-min-100 shadow-lg group-hover:shadow-2xl transition-all">
