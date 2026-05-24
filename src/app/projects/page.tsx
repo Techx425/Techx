@@ -127,7 +127,7 @@ export default function Projects() {
             <div className="no-bottom no-top" id="content">
                 <div id="top"></div>
 
-                <section id="subheader" className="bg-dark text-light relative" style={{ backgroundImage: 'url(/images/background/w2.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <section id="subheader" className="bg-dark text-light relative" style={{ backgroundImage: 'url(/images/projects/projects-main.jpeg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <div className="container relative z-2">
                         <div className="row gy-4 gx-5 align-items-center">
                             <div className="col-lg-12">
