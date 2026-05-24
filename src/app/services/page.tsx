@@ -23,7 +23,7 @@ const services = [
         slug: 'energy-trading',
         title: 'Energy Trading',
         desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.',
-        img: '/images/services/2.webp',
+        img: '/images/services/core-energy-trading.webp',
     },
     {
         id: 3,
