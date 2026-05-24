@@ -413,12 +413,12 @@ export default function Home() {
               className="project-swiper"
             >
               {[
-                { title: 'Sadaqat Solar Plant', category: 'Solar Power Projects', img: '1' },
-                { title: 'Dewan Cement Solar', category: 'Solar Power Projects', img: '2' },
-                { title: 'Ittehad Steel Solar Plant', category: 'Solar Power Projects', img: '3' },
-                { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '4' },
-                { title: 'Rajhana Motorway Solar Plant', category: 'Solar Power Projects', img: '5' },
-                { title: 'LPG Supply Network', category: 'Energy Trading Projects', img: '6' }
+                { title: 'Sadaqat Solar Plant', category: 'Solar Power Projects', img: '/images/projects/textile1.jpeg' },
+                { title: 'Dewan Cement Solar', category: 'Solar Power Projects', img: '/images/projects/deewan2.jpeg' },
+                { title: 'Ittehad Steel Solar Plant', category: 'Solar Power Projects', img: '/images/projects/ittehad steel 1.jpeg' },
+                { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/4.webp' },
+                { title: 'Rajhana Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/5.webp' },
+                { title: 'LPG Supply Network', category: 'Energy Trading Projects', img: '/images/projects/6.webp' }
               ].map((project, idx) => (
                 <SwiperSlide key={idx}>
                   <Link href="/projects">
@@ -431,7 +431,7 @@ export default function Home() {
                         <h4 className="mb-0 text-white">{project.title}</h4>
                       </div>
                       <div className="hover-op-05 bg-dark abs w-100 h-100 top-0 start-0 z-2 transition-opacity"></div>
-                      <img src={`/images/projects/${project.img}.webp`} className="w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-700" alt={project.title} />
+                      <img src={project.img} className="w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-700" alt={project.title} />
                       <div className="gradient-edge-bottom h-50"></div>
                     </div>
                   </Link>
