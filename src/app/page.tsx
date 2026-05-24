@@ -416,7 +416,7 @@ export default function Home() {
                 { title: 'Sadaqat Solar Plant', category: 'Solar Power Projects', img: '/images/projects/textile1.jpeg' },
                 { title: 'Dewan Cement Solar', category: 'Solar Power Projects', img: '/images/projects/deewan2.jpeg' },
                 { title: 'Ittehad Steel Solar Plant', category: 'Solar Power Projects', img: '/images/projects/ittehad steel 1.jpeg' },
-                { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/4.webp' },
+                { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/moterway.jpeg' },
                 { title: 'Rajhana Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/5.webp' },
                 { title: 'LPG Supply Network', category: 'Energy Trading Projects', img: '/images/projects/6.webp' }
               ].map((project, idx) => (
