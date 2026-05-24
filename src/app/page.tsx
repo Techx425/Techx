@@ -225,7 +225,7 @@ export default function Home() {
               {[
                 { title: 'Power Solutions', slug: 'power-solutions', img: 'power-solution', desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.' },
                 { title: 'Energy Trading', slug: 'energy-trading', img: 'core-energy-trading', desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.' },
-                { title: 'Energy Development', slug: 'energy-development', img: '3', desc: 'Development, design and arranging funding for utility scale projects.' },
+                { title: 'Energy Development', slug: 'energy-development', img: 'enerydevelopement', desc: 'Development, design and arranging funding for utility scale projects.' },
                 { title: 'Infrastructure', slug: 'infrastructure', img: '4', desc: 'Development of Port and energy storage infrastructure.' },
 
               ].map((service, i) => (

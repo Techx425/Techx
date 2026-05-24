@@ -30,7 +30,7 @@ const services = [
         slug: 'energy-development',
         title: 'Energy Development',
         desc: 'Development, design and arranging funding for utility scale projects.',
-        img: '/images/services/3.webp',
+        img: '/images/services/enerydevelopement.webp',
     },
     {
         id: 4,
