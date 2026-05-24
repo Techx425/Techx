@@ -118,6 +118,38 @@ export default function About() {
                     </div>
                 </section>
 
+                <section className="bg-white py-5">
+                    <div className="container">
+                        <div className="row text-center mb-5">
+                            <div className="col-lg-12">
+                                <motion.h2 className="fw-900 display-5 mb-3" {...fadeInUp}>Our <span className="id-color">Certificates</span></motion.h2>
+                                <motion.div className="border-bottom border-warning mx-auto border-3" style={{ width: '80px' }} {...fadeInUp} transition={{ delay: 0.2 }}></motion.div>
+                            </div>
+                        </div>
+                        <div className="row g-4 align-items-center justify-content-center">
+                            {[
+                                'AEDB logo.png',
+                                'O&M.png',
+                                'PEC logo.png',
+                                'secp logo.png'
+                            ].map((logo, idx) => (
+                                <motion.div 
+                                    key={idx} 
+                                    className="col-lg-3 col-md-6 col-6 text-center"
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: idx * 0.15 }}
+                                >
+                                    <div className="p-4 bg-light rounded-3 shadow-sm hover-shadow transition-all h-100 d-flex align-items-center justify-content-center border">
+                                        <img src={`/images/certificate/${logo}`} className="img-fluid" style={{ maxHeight: '100px', objectFit: 'contain' }} alt="Certificate" />
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
                 <section className="bg-light">
                     <div className="container">
                         <div className="row g-4 text-center">
