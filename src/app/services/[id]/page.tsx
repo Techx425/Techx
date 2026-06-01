@@ -79,7 +79,7 @@ export default function ServiceDetail() {
                         </div>
                     </div>
                     <div className="gradient-edge-bottom h-50"></div>
-                    <div className="sw-overlay op-4"></div>
+                    <div className="abs top-0 w-100 h-100" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}></div>
                 </section>
 
                 <section>
