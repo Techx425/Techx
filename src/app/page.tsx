@@ -88,17 +88,13 @@ export default function Home() {
         {/* Stats Section */}
         <section>
           <div className="container">
-            <div className="row align-items-start">
-              <div className="col-lg-4 mb-4 mb-lg-0">
-                <motion.h2 className="fw-bold" {...fadeInUp}>About Us</motion.h2>
-              </div>
-              <div className="col-lg-8">
+            <div className="row text-center">
+              <div className="col-lg-10 offset-lg-1">
+                <motion.h2 className="fw-bold mb-4" {...fadeInUp}>About Us</motion.h2>
                 <motion.h3 {...fadeInUp} transition={{ delay: 0.2 }}>
                   At TECHX Pvt Ltd, we are driven to fulfill the energy needs of industrial and commercial users by providing solutions tailored to their needs.
                   <span className="op-3"> We help our clients source energy and power that works for their unique needs and suits their budgets. Not just a vendor, we work as partners with industries across Pakistan, to help them assess the right solution for their requirements.</span>
                 </motion.h3>
-
-
               </div>
             </div>
           </div>
