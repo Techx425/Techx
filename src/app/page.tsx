@@ -116,7 +116,7 @@ export default function Home() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.3, duration: 0.8 }}
                   >
-                    <img src="/images/misc/p2.webp" className="w-100 hover-scale-1-2 transition-all" alt="" />
+                    <img src="/images/background/home-page-2.webp" className="w-100 hover-scale-1-2 transition-all" alt="" />
                   </motion.div>
                 </div>
               </div>
