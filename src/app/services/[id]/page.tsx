@@ -87,7 +87,7 @@ export default function ServiceDetail() {
                         <div className="row g-5 align-items-center">
                             <div className="col-lg-6">
                                 <motion.div className="rounded-1 overflow-hidden shadow-2xl" {...fadeInUp}>
-                                    <img src={service.img} className="w-100" alt={service.title} />
+                                    <img src={service.img} className="w-100" alt={service.title} style={{ aspectRatio: '1/1', objectFit: 'cover' }} />
                                 </motion.div>
                             </div>
                             <div className="col-lg-6">
