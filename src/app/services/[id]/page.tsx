@@ -30,7 +30,7 @@ const services = [
         slug: 'energy-development',
         title: 'Energy Development',
         desc: 'TechX is at the forefront of Energy Development, working on utility-scale renewable energy projects. We handle the entire lifecycle of a project—from conceptual design and feasibility studies to arranging international funding and regulatory approvals. Our goal is to contribute to Pakistan\'s energy security through large-scale sustainable initiatives.',
-        img: '/images/services/3.webp',
+        img: '/images/services/enerydevelopement.webp',
         features: ['Utility-scale Project Management', 'Financial Structuring', 'Feasibility Studies', 'Regulatory Approvals']
     },
     {
