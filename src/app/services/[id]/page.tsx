@@ -34,11 +34,11 @@ const services = [
         features: ['Utility-scale Project Management', 'Financial Structuring', 'Feasibility Studies', 'Regulatory Approvals']
     },
     {
-        slug: 'infrastructure',
-        title: 'Infrastructure Management',
-        desc: 'Energy infrastructure is the backbone of any developing economy. At TechX, we specialize in the development and management of energy infrastructure, including port facilities and specialized storage solutions for energy products. Our infrastructure projects are designed for long-term sustainability and operational excellence.',
+        slug: 'o-and-m',
+        title: 'O&M Services',
+        desc: 'At TechX, we provide comprehensive Operations and Maintenance (O&M) services to ensure your solar power plants and energy infrastructure operate at peak efficiency. Our proactive maintenance strategies minimize downtime, maximize energy yield, and significantly extend the lifespan of your renewable energy assets.',
         img: '/images/services/4.webp',
-        features: ['Port Energy Infrastructure', 'Storage Facilities Development', 'Logistics Infrastructure', 'Operational Management']
+        features: ['Preventive & Corrective Maintenance', 'Performance Monitoring', 'Asset Management', 'Cleaning & Inspection']
     },
 ];
 

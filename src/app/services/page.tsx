@@ -34,9 +34,9 @@ const services = [
     },
     {
         id: 4,
-        slug: 'infrastructure',
-        title: 'Infrastructure',
-        desc: 'Development of Port and energy storage infrastructure.',
+        slug: 'o-and-m',
+        title: 'O&M Services',
+        desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.',
         img: '/images/services/4.webp',
     },
 ];
