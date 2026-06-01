@@ -165,38 +165,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Marquee */}
-        <section className="section-dark p-0 bg-color overflow-hidden" aria-label="section">
-          <div className="text-dark d-flex py-4 lh-1">
 
-            <motion.div
-              className="d-flex flex-nowrap"
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{
-                ease: "linear",
-                duration: 20,
-                repeat: Infinity,
-              }}
-              style={{ width: "max-content" }}
-            >
-              {[...Array(2)].map((_, j) =>
-                Array(10).fill(0).map((_, i) => (
-                  <div key={`${j}-${i}`} className="d-flex align-items-center mx-4">
-                    <span className="fs-30 fw-800 text-uppercase">
-                      Solar Energy Experts
-                    </span>
-                    <img
-                      src="/images/logo-icon-dark.webp"
-                      className="w-30px mx-4"
-                      alt=""
-                    />
-                  </div>
-                ))
-              )}
-            </motion.div>
-
-          </div>
-        </section>
         {/* Services Swiper */}
         <section className="bg-light">
           <div className="container">
