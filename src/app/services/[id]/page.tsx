@@ -16,7 +16,7 @@ const services = [
         slug: 'power-solutions',
         title: 'Power Solutions',
         desc: 'At TechX, we provide end-to-end Power Solutions tailored for industrial and commercial sectors. Our expertise lies in the import, installation, and commissioning of industrial-scale solar plants. We offer flexible financial models, including direct sales and Power Purchase Agreements (PPA), enabling businesses to switch to clean energy with zero upfront capital investment.',
-        img: '/images/services/1.webp',
+        img: '/images/projects/deewan2.jpeg',
         features: ['Industrial Solar Installation', 'PPA (Power Purchase Agreement) Models', 'EPC Services', 'Off-grid solutions']
     },
     {

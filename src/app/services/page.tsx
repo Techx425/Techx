@@ -16,7 +16,7 @@ const services = [
         slug: 'power-solutions',
         title: 'Power Solutions',
         desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.',
-        img: '/images/services/power-solution.webp',
+        img: '/images/projects/deewan2.jpeg',
     },
     {
         id: 2,
