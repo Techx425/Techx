@@ -107,7 +107,7 @@ export default function Home() {
               <div className="col-lg-6">
                 <div className="relative">
                   <motion.div className="relative overflow-hidden z-2 mb-5 rounded-1 w-60 soft-shadow" {...scaleIn}>
-                    <img src="/images/misc/p1.webp" className="w-100 hover-scale-1-2 transition-all" alt="" />
+                    <img src="/images/background/home-page-1.webp" className="w-100 hover-scale-1-2 transition-all" alt="" />
                   </motion.div>
                   <motion.div
                     className="abs overflow-hidden top-0 end-0 mt-5 rounded-1 w-60 shadow-lg"
