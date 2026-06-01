@@ -106,17 +106,17 @@ export default function Home() {
             <div className="row gy-4 gx-5 align-items-center">
               <div className="col-lg-6">
                 <div className="relative">
-                  <motion.div className="relative overflow-hidden z-2 mb-5 rounded-1 w-60 soft-shadow" {...scaleIn}>
-                    <img src="/images/background/home-page-1.webp" className="w-100 hover-scale-1-2 transition-all" alt="" />
+                  <motion.div className="relative overflow-hidden z-2 mb-4 rounded-1 w-65 soft-shadow" {...scaleIn}>
+                    <img src="/images/background/home-page-1.webp" className="w-100 hover-scale-1-2 transition-all" style={{ aspectRatio: '4/5', objectFit: 'cover' }} alt="" />
                   </motion.div>
                   <motion.div
-                    className="abs overflow-hidden top-0 end-0 mt-5 rounded-1 w-60 shadow-lg"
+                    className="abs overflow-hidden top-0 end-0 mt-4 rounded-1 w-65 shadow-lg"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3, duration: 0.8 }}
                   >
-                    <img src="/images/background/home-page-2.webp" className="w-100 hover-scale-1-2 transition-all" alt="" />
+                    <img src="/images/background/home-page-2.webp" className="w-100 hover-scale-1-2 transition-all" style={{ aspectRatio: '4/5', objectFit: 'cover' }} alt="" />
                   </motion.div>
                 </div>
               </div>
