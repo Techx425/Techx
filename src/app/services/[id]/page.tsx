@@ -84,13 +84,8 @@ export default function ServiceDetail() {
 
                 <section>
                     <div className="container">
-                        <div className="row g-5 align-items-center">
-                            <div className="col-lg-6">
-                                <motion.div className="rounded-1 overflow-hidden shadow-2xl" {...fadeInUp}>
-                                    <img src={service.img} className="w-100" alt={service.title} style={{ aspectRatio: '1/1', objectFit: 'cover' }} />
-                                </motion.div>
-                            </div>
-                            <div className="col-lg-6">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-10 text-center">
                                 <motion.div className="subtitle mb-3" {...fadeInUp}>{service.title}</motion.div>
                                 <motion.h2 className="mb-4" {...fadeInUp} transition={{ delay: 0.2 }}>Expert Solutions for {service.title}</motion.h2>
                                 <motion.p className="lead" {...fadeInUp} transition={{ delay: 0.3 }}>
@@ -99,7 +94,7 @@ export default function ServiceDetail() {
 
                                 <div className="spacer-single"></div>
 
-                                <div className="row g-4">
+                                <div className="row g-4 text-start">
                                     {service.features.map((feature, idx) => (
                                         <div key={idx} className="col-md-6">
                                             <div className="d-flex align-items-center shadow-sm p-3 rounded-1 border-start border-4 border-color bg-light">
