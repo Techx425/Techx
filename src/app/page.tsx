@@ -195,7 +195,7 @@ export default function Home() {
                 { title: 'Power Solutions', slug: 'power-solutions', img: 'power-solution', desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.' },
                 { title: 'Energy Trading', slug: 'energy-trading', img: 'core-energy-trading', desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.' },
                 { title: 'Energy Development', slug: 'energy-development', img: 'enerydevelopement', desc: 'Development, design and arranging funding for utility scale projects.' },
-                { title: 'O&M Services', slug: 'o-and-m', img: '4', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
+                { title: 'O & M', slug: 'o-and-m', img: '4', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
 
               ].map((service, i) => (
                 <SwiperSlide key={i}>
