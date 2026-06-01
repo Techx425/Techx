@@ -23,7 +23,7 @@ const services = [
         slug: 'energy-trading',
         title: 'Energy Trading',
         desc: 'Our Energy Trading division focuses on sourcing and distributing high-quality refined and non-renewable fuels. We specialize in the procurement of LPG from the Middle East, ensuring a stable and cost-effective energy supply for our clients in Pakistan. Our robust supply chain and market expertise make us a reliable partner in the fuel trading landscape.',
-        img: '/images/services/2.webp',
+        img: '/images/services/core-energy-trading.webp',
         features: ['LPG Procurement', 'Fuel Supply Chain Management', 'Market Analysis', 'Cross-border Logistics']
     },
     {
