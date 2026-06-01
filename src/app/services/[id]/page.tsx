@@ -79,7 +79,7 @@ export default function ServiceDetail() {
                         </div>
                     </div>
                     <div className="gradient-edge-bottom h-50"></div>
-                    <div className="sw-overlay op-8"></div>
+                    <div className="sw-overlay op-4"></div>
                 </section>
 
                 <section>
