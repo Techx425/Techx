@@ -105,25 +105,14 @@ export default function Home() {
         {/* Features Section */}
         <section className="border-top bg-light">
           <div className="container">
-            <div className="row gy-4 gx-5 align-items-center">
+            <div className="row gy-4 gx-5 align-items-stretch">
               <div className="col-lg-6">
-                <div className="relative">
-                  <motion.div className="relative overflow-hidden z-2 mb-4 rounded-1 w-65 soft-shadow" {...scaleIn}>
-                    <img src="/images/background/home-page-1.webp" className="w-100 hover-scale-1-2 transition-all" style={{ aspectRatio: '4/5', objectFit: 'cover' }} alt="" />
-                  </motion.div>
-                  <motion.div
-                    className="abs overflow-hidden top-0 end-0 mt-4 rounded-1 w-65 shadow-lg"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3, duration: 0.8 }}
-                  >
-                    <img src="/images/background/home-page-2.webp" className="w-100 hover-scale-1-2 transition-all" style={{ aspectRatio: '4/5', objectFit: 'cover' }} alt="" />
-                  </motion.div>
-                </div>
+                <motion.div className="h-100 relative overflow-hidden rounded-1 soft-shadow" {...scaleIn}>
+                  <img src="/images/background/home-page-1.webp" className="w-100 h-100 hover-scale-1-2 transition-all" style={{ objectFit: 'cover' }} alt="" />
+                </motion.div>
               </div>
 
-              <div className="col-lg-6">
+              <div className="col-lg-6 d-flex flex-column justify-content-center">
                 <motion.div className="subtitle id-color mb-2" {...fadeInUp}>Solar Power for Smarter Future</motion.div>
                 <motion.h2 {...fadeInUp} transition={{ delay: 0.2 }}>Not Just a Vendor, We're Your Energy  <span className="op-3">Partner</span></motion.h2>
                 <motion.p {...fadeInUp} transition={{ delay: 0.3 }}>We work as partners with industries across Pakistan, to help them assess the right solution for their requirements. Our multidisciplinary expertise enables us to address complex challenges and drive innovation across the energy and power landscape.</motion.p>
