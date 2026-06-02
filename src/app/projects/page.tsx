@@ -13,7 +13,7 @@ const fadeInUp = {
 const projects = [
     {
         id: 1,
-        title: 'Sadaqat Solar Plant',
+        title: 'Textile Solar Plant',
         capacity: '12 MW',
         location: 'Faisalabad',
         img: '/images/projects/textile1.jpeg',
@@ -22,7 +22,7 @@ const projects = [
     },
     {
         id: 2,
-        title: 'Dewan Cement Solar',
+        title: 'Cement Solar Plant',
         capacity: '8 MW',
         location: 'Karachi',
         img: '/images/projects/deewan2.jpeg',
@@ -31,7 +31,7 @@ const projects = [
     },
     {
         id: 3,
-        title: 'Ittehad Steel Solar Plant',
+        title: 'Steel Solar Plant',
         capacity: '5 MW',
         location: 'Lahore',
         img: '/images/projects/ittehad steel 1.jpeg',

@@ -360,9 +360,9 @@ export default function Home() {
               className="project-swiper"
             >
               {[
-                { title: 'Sadaqat Solar Plant', category: 'Solar Power Projects', img: '/images/projects/textile1.jpeg' },
-                { title: 'Dewan Cement Solar', category: 'Solar Power Projects', img: '/images/projects/deewan2.jpeg' },
-                { title: 'Ittehad Steel Solar Plant', category: 'Solar Power Projects', img: '/images/projects/ittehad steel 1.jpeg' },
+                { title: 'Textile Solar Plant', category: 'Solar Power Projects', img: '/images/projects/textile1.jpeg' },
+                { title: 'Cement Solar Plant', category: 'Solar Power Projects', img: '/images/projects/deewan2.jpeg' },
+                { title: 'Steel Solar Plant', category: 'Solar Power Projects', img: '/images/projects/ittehad steel 1.jpeg' },
                 { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/moterway.webp' },
                 { title: 'Rajhana Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/5.webp' },
                 { title: 'LPG Supply Network', category: 'Fuel Trading Projects', img: '/images/projects/6.webp' }
