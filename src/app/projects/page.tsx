@@ -41,7 +41,7 @@ const projects = [
     {
         id: 4,
         title: 'Uch Shareef Motorway Solar',
-        capacity: '660 KW',
+        capacity: '330 KW',
         location: 'Uch Shareef',
         img: '/images/projects/moterway.webp',
         desc: 'Highway infrastructure solar power solution providing clean energy to motorway service areas and administrative buildings.',
@@ -50,7 +50,7 @@ const projects = [
     {
         id: 5,
         title: 'Rajhana Motorway Solar Plant',
-        capacity: '4 MW',
+        capacity: '330 KW',
         location: 'Rajhana',
         img: '/images/projects/5.webp',
         desc: 'Motorway infrastructure solar power solution deployed across multiple service zones to ensure uninterrupted power supply.',
