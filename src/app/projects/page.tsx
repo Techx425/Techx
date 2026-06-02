@@ -76,15 +76,7 @@ const projects = [
     },
 
 
-    {
-        id: 12,
-        title: 'Energy Project Management',
-        capacity: 'N/A',
-        location: 'Pakistan',
-        img: '/images/background/6.webp',
-        desc: 'End-to-end project management services covering planning, procurement, construction oversight, and commissioning for energy development projects.',
-        tags: ['Project Management', 'Energy Development', 'Consulting'],
-    },
+
 ];
 
 export default function Projects() {
