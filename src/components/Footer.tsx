@@ -26,7 +26,7 @@ export default function Footer() {
                                         <li><Link href="/services/power-solutions">Power Solutions</Link></li>
                                         <li><Link href="/services/energy-trading">Energy Trading</Link></li>
                                         <li><Link href="/services/energy-development">Energy Development</Link></li>
-                                        <li><Link href="/services/infrastructure">Infrastructure Management</Link></li>
+                                        <li><Link href="/services/o-and-m">O & M</Link></li>
                                     </ul>
                                 </div>
                             </div>
