@@ -37,7 +37,7 @@ const services = [
         slug: 'o-and-m',
         title: 'O & M',
         desc: 'At TechX, we provide comprehensive Operations and Maintenance (O&M) services to ensure your solar power plants and energy infrastructure operate at peak efficiency. Our proactive maintenance strategies minimize downtime, maximize energy yield, and significantly extend the lifespan of your renewable energy assets.',
-        img: '/images/services/4.webp',
+        img: '/images/services/O&M.jpeg',
         features: ['Preventive & Corrective Maintenance', 'Performance Monitoring', 'Asset Management', 'Cleaning & Inspection']
     },
 ];
