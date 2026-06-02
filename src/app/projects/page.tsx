@@ -44,6 +44,7 @@ const projects = [
     {
         id: 4,
         title: 'Motorway Solar',
+        logo: '/images/projects/moterway logo.jpeg',
         capacity: '660 KW',
         location: 'Uch Shareef & Rajhana',
         img: ['/images/projects/moterway.webp', '/images/projects/projects-main.jpeg'] as any,
@@ -53,6 +54,7 @@ const projects = [
     {
         id: 6,
         title: 'Fuel Supply Network',
+        logo: '/images/projects/ssgc.jpeg',
         capacity: 'N/A',
         location: 'Nationwide',
         img: '/images/services/core-energy-trading.webp',
@@ -62,6 +64,7 @@ const projects = [
     {
         id: 7,
         title: 'Energy Storage Infrastructure ( Upcoming )',
+        logo: '/images/projects/ssgc.jpeg',
         capacity: 'N/A',
         location: 'Gwadar',
         img: '/images/background/1.webp',
