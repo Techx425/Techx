@@ -14,22 +14,22 @@ const fadeInUp = {
 const services = [
     {
         slug: 'power-solutions',
-        title: 'Power Solutions',
-        desc: 'At TechX, we provide end-to-end Power Solutions tailored for industrial and commercial sectors. Our expertise lies in the import, installation, and commissioning of industrial-scale solar plants. We offer flexible financial models, including direct sales and Power Purchase Agreements (PPA), enabling businesses to switch to clean energy with zero upfront capital investment.',
+        title: 'Renewable Energy Solutions',
+        desc: 'At TechX, we provide end-to-end Renewable Energy Solutions tailored for industrial and commercial sectors. Our expertise lies in the import, installation, and commissioning of industrial-scale solar plants. We offer flexible financial models, including direct sales and Power Purchase Agreements (PPA), enabling businesses to switch to clean energy with zero upfront capital investment.',
         img: '/images/projects/deewan2.jpeg',
         features: ['Industrial Solar Installation', 'PPA (Power Purchase Agreement) Models', 'EPC Services', 'Off-grid solutions']
     },
     {
         slug: 'energy-trading',
-        title: 'Energy Trading',
-        desc: 'Our Energy Trading division focuses on sourcing and distributing high-quality refined and non-renewable fuels. We specialize in the procurement of LPG from the Middle East, ensuring a stable and cost-effective energy supply for our clients in Pakistan. Our robust supply chain and market expertise make us a reliable partner in the fuel trading landscape.',
+        title: 'Fuel Trading',
+        desc: 'Our Fuel Trading division focuses on sourcing and distributing high-quality refined and non-renewable fuels. We specialize in the procurement of LPG from the Middle East, ensuring a stable and cost-effective energy supply for our clients in Pakistan. Our robust supply chain and market expertise make us a reliable partner in the fuel trading landscape.',
         img: '/images/services/core-energy-trading.webp',
         features: ['LPG Procurement', 'Fuel Supply Chain Management', 'Market Analysis', 'Cross-border Logistics']
     },
     {
         slug: 'energy-development',
-        title: 'Energy Development',
-        desc: 'TechX is at the forefront of Energy Development, working on utility-scale renewable energy projects. We handle the entire lifecycle of a project—from conceptual design and feasibility studies to arranging international funding and regulatory approvals. Our goal is to contribute to Pakistan\'s energy security through large-scale sustainable initiatives.',
+        title: 'Renewable Energy Infrastructure',
+        desc: 'TechX is at the forefront of Renewable Energy Infrastructure, working on utility-scale renewable energy projects. We handle the entire lifecycle of a project—from conceptual design and feasibility studies to arranging international funding and regulatory approvals. Our goal is to contribute to Pakistan\'s energy security through large-scale sustainable initiatives.',
         img: '/images/services/enerydevelopement.webp',
         features: ['Utility-scale Project Management', 'Financial Structuring', 'Feasibility Studies', 'Regulatory Approvals']
     },

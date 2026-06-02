@@ -179,9 +179,9 @@ export default function Home() {
               className="pb-5"
             >
               {[
-                { title: 'Power Solutions', slug: 'power-solutions', img: '/images/projects/deewan2.jpeg', desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.' },
-                { title: 'Energy Trading', slug: 'energy-trading', img: 'core-energy-trading', desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.' },
-                { title: 'Energy Development', slug: 'energy-development', img: 'enerydevelopement', desc: 'Development, design and arranging funding for utility scale projects.' },
+                { title: 'Renewable Energy Solutions', slug: 'power-solutions', img: '/images/projects/deewan2.jpeg', desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.' },
+                { title: 'Fuel Trading', slug: 'energy-trading', img: 'core-energy-trading', desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.' },
+                { title: 'Renewable Energy Infrastructure', slug: 'energy-development', img: 'enerydevelopement', desc: 'Development, design and arranging funding for utility scale projects.' },
                 { title: 'O & M', slug: 'o-and-m', img: '4', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
 
               ].map((service, i) => (
@@ -365,7 +365,7 @@ export default function Home() {
                 { title: 'Ittehad Steel Solar Plant', category: 'Solar Power Projects', img: '/images/projects/ittehad steel 1.jpeg' },
                 { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/moterway.webp' },
                 { title: 'Rajhana Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/5.webp' },
-                { title: 'LPG Supply Network', category: 'Energy Trading Projects', img: '/images/projects/6.webp' }
+                { title: 'LPG Supply Network', category: 'Fuel Trading Projects', img: '/images/projects/6.webp' }
               ].map((project, idx) => (
                 <SwiperSlide key={idx}>
                   <Link href="/projects">

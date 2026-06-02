@@ -76,7 +76,7 @@ export default function About() {
                             <motion.div className="col-lg-4" {...scaleIn}>
                                 <div className="bg-white p-4 rounded-3 shadow-sm h-100">
                                     <i className="fa-solid fa-bolt fs-1 text-warning mb-3"></i>
-                                    <h4>Power Solutions</h4>
+                                    <h4>Renewable Energy Solutions</h4>
                                     <p className="text-muted">
                                         Import and installation of industrial scale solar
                                         plants under sale and PPA contracts.
@@ -91,7 +91,7 @@ export default function About() {
                             >
                                 <div className="bg-white p-4 rounded-3 shadow-sm h-100">
                                     <i className="fa-solid fa-right-left fs-1 text-warning mb-3"></i>
-                                    <h4>Energy Trading</h4>
+                                    <h4>Fuel Trading</h4>
                                     <p className="text-muted">
                                         Sourcing refined and non-renewable fuels including
                                         LPG from Middle East.
@@ -106,7 +106,7 @@ export default function About() {
                             >
                                 <div className="bg-white p-4 rounded-3 shadow-sm h-100">
                                     <i className="fa-solid fa-industry fs-1 text-warning mb-3"></i>
-                                    <h4>Energy Development</h4>
+                                    <h4>Renewable Energy Infrastructure</h4>
                                     <p className="text-muted">
                                         Development, design and arranging funding for
                                         utility scale projects.

@@ -23,9 +23,9 @@ export default function Footer() {
                                 <div className="widget">
                                     <h5>Our Services</h5>
                                     <ul>
-                                        <li><Link href="/services/power-solutions">Power Solutions</Link></li>
-                                        <li><Link href="/services/energy-trading">Energy Trading</Link></li>
-                                        <li><Link href="/services/energy-development">Energy Development</Link></li>
+                                        <li><Link href="/services/power-solutions">Renewable Energy Solutions</Link></li>
+                                        <li><Link href="/services/energy-trading">Fuel Trading</Link></li>
+                                        <li><Link href="/services/energy-development">Renewable Energy Infrastructure</Link></li>
                                         <li><Link href="/services/o-and-m">O & M</Link></li>
                                     </ul>
                                 </div>
