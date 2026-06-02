@@ -40,21 +40,12 @@ const projects = [
     },
     {
         id: 4,
-        title: 'Uch Shareef Motorway Solar',
-        capacity: '330 KW',
-        location: 'Uch Shareef',
-        img: '/images/projects/moterway.webp',
+        title: 'Motorway Solar',
+        capacity: '660 KW',
+        location: 'Uch Shareef & Rajhana',
+        img: ['/images/projects/moterway.webp', '/images/projects/projects-main.jpeg'] as any,
         desc: 'Highway infrastructure solar power solution providing clean energy to motorway service areas and administrative buildings.',
-        tags: ['Infrastructure', 'EPC Services', 'Grid Integration'],
-    },
-    {
-        id: 5,
-        title: 'Rajhana Motorway Solar Plant',
-        capacity: '330 KW',
-        location: 'Rajhana',
-        img: '/images/projects/projects-main.jpeg',
-        desc: 'Motorway infrastructure solar power solution deployed across multiple service zones to ensure uninterrupted power supply.',
-        tags: ['Infrastructure', 'Solar PV', 'O&M Services'],
+        tags: ['Infrastructure', 'EPC Services', 'Solar PV', 'Grid Integration', 'O&M Services'],
     },
     {
         id: 6,
@@ -119,11 +110,25 @@ export default function Projects() {
                                     <div style={cardStyle}>
                                         {/* Image */}
                                         <div style={imgWrapStyle}>
-                                            <img
-                                                src={project.img}
-                                                alt={project.title}
-                                                style={imgStyle}
-                                            />
+                                            {Array.isArray(project.img) ? (
+                                                <div style={{ display: 'flex', width: '100%', height: '100%' }}>
+                                                    {project.img.map((src: string, i: number) => (
+                                                        <div key={i} style={{ flex: 1, overflow: 'hidden' }}>
+                                                            <img
+                                                                src={src}
+                                                                alt={project.title}
+                                                                style={{ ...imgStyle, height: '100%', objectFit: 'cover' }}
+                                                            />
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            ) : (
+                                                <img
+                                                    src={project.img}
+                                                    alt={project.title}
+                                                    style={imgStyle}
+                                                />
+                                            )}
                                         </div>
 
                                         {/* Body */}
