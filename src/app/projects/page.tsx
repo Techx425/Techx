@@ -58,7 +58,7 @@ const projects = [
     },
     {
         id: 6,
-        title: 'LPG Supply Network',
+        title: 'Fuel Supply Network',
         capacity: 'N/A',
         location: 'Nationwide',
         img: '/images/services/core-energy-trading.webp',
