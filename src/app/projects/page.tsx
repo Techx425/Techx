@@ -25,7 +25,7 @@ const projects = [
         id: 2,
         title: 'Cement Solar Plant',
         logo: '/images/projects/dewan-logo.jpeg',
-        capacity: '8 MW',
+        capacity: '6.5 MW',
         location: 'Karachi',
         img: '/images/projects/deewan2.jpeg',
         desc: 'Full-scale industrial solar solution for Dewan Cement\'s manufacturing facility, reducing grid dependency and cutting operational energy costs.',
