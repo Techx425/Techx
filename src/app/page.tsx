@@ -307,17 +307,8 @@ export default function Home() {
                     <h2 className="mb-0 id-color">100%</h2>
                     <p className="lh-1-5 mb-0">Average Increase in Efficiency</p>
                   </motion.div>
-                  <motion.div className="rounded-1 w-90 overflow-hidden shadow-2xl" {...fadeInUp}>
+                  <motion.div className="rounded-1 w-100 overflow-hidden shadow-2xl" {...fadeInUp}>
                     <img src="/images/background/techx-team.webp" className="w-100 hover-scale-1-2" style={{ aspectRatio: '4/3', objectFit: 'cover' }} alt="" />
-                  </motion.div>
-                  <motion.div
-                    className="rounded-1 w-50 abs mb-min-50 end-0 bottom-0 z-2 overflow-hidden shadow-2xl border border-dark"
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 }}
-                  >
-                    <img src="/images/misc/s1.webp" className="w-100" alt="" />
                   </motion.div>
                 </div>
               </div>
