@@ -67,7 +67,7 @@ const projects = [
     },
     {
         id: 7,
-        title: 'Gwadar Energy Port',
+        title: 'Energy Storage Infrastructure ( Upcoming )',
         capacity: 'N/A',
         location: 'Gwadar',
         img: '/images/background/1.webp',
