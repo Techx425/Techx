@@ -52,7 +52,7 @@ const projects = [
         title: 'Rajhana Motorway Solar Plant',
         capacity: '330 KW',
         location: 'Rajhana',
-        img: '/images/projects/5.webp',
+        img: '/images/projects/projects-main.jpeg',
         desc: 'Motorway infrastructure solar power solution deployed across multiple service zones to ensure uninterrupted power supply.',
         tags: ['Infrastructure', 'Solar PV', 'O&M Services'],
     },
