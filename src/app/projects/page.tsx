@@ -32,6 +32,16 @@ const projects = [
         tags: ['EPC Services', 'Industrial Solar', 'Energy Audit'],
     },
     {
+        id: 21,
+        title: 'Cement Solar Plant',
+        logo: '/images/projects/dewan-logo.jpeg',
+        capacity: '6.4 MW',
+        location: 'Hattar',
+        img: '/images/projects/deewan2.jpeg',
+        desc: "Full-scale industrial solar solution for Dewan Cement's manufacturing facility, reducing grid dependency and cutting operational energy costs.",
+        tags: ['EPC Services', 'Industrial Solar', 'Energy Audit'],
+    },
+    {
         id: 3,
         title: 'Steel Solar Plant',
         logo: '/images/projects/ittehad-logo.jpeg',
