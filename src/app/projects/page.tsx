@@ -74,24 +74,7 @@ const projects = [
         desc: 'Major port infrastructure development enabling large-scale energy imports and exports through the strategic Gwadar deep-sea port.',
         tags: ['Infrastructure', 'Port Development', 'Logistics'],
     },
-    {
-        id: 8,
-        title: 'Utility-Scale Solar Feasibility',
-        capacity: '50 MW',
-        location: 'Punjab',
-        img: '/images/background/2.webp',
-        desc: 'Comprehensive feasibility study and design for a utility-scale solar power development, including funding arrangement and grid interconnection planning.',
-        tags: ['Feasibility Study', 'Energy Development', 'Grid Integration'],
-    },
-    {
-        id: 9,
-        title: 'Market Intelligence System',
-        capacity: 'N/A',
-        location: 'Islamabad',
-        img: '/images/background/3.webp',
-        desc: 'Advanced market intelligence and trading analytics platform enabling real-time energy market data analysis and procurement optimization.',
-        tags: ['Energy Trading', 'Analytics', 'Technology'],
-    },
+
     {
         id: 10,
         title: 'Lahore Distribution Center',
