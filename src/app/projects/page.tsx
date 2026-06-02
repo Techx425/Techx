@@ -75,24 +75,7 @@ const projects = [
         tags: ['Infrastructure', 'Port Development', 'Logistics'],
     },
 
-    {
-        id: 10,
-        title: 'Lahore Distribution Center',
-        capacity: 'N/A',
-        location: 'Lahore',
-        img: '/images/background/4.webp',
-        desc: 'State-of-the-art energy distribution and storage infrastructure hub serving industrial and commercial clients across central Punjab.',
-        tags: ['Infrastructure', 'Distribution', 'Storage'],
-    },
-    {
-        id: 11,
-        title: 'Faisalabad Industrial Hub',
-        capacity: '6 MW',
-        location: 'Faisalabad',
-        img: '/images/background/5.webp',
-        desc: 'Industrial energy infrastructure development providing integrated solar and grid power management for Faisalabad\'s manufacturing sector.',
-        tags: ['Industrial Solar', 'EPC Services', 'Grid Management'],
-    },
+
     {
         id: 12,
         title: 'Energy Project Management',
