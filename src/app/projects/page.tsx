@@ -61,7 +61,7 @@ const projects = [
         title: 'LPG Supply Network',
         capacity: 'N/A',
         location: 'Nationwide',
-        img: '/images/projects/6.webp',
+        img: '/images/services/core-energy-trading.webp',
         desc: 'Comprehensive LPG sourcing and distribution network across Pakistan, importing refined fuels from the Middle East.',
         tags: ['Energy Trading', 'LPG', 'Distribution'],
     },
