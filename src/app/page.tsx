@@ -246,7 +246,7 @@ export default function Home() {
 
             <div className="row g-4 relative z-10">
               {[
-                { icon: Sun, val: "75", suffix: "MW", label: "Solar Capacity", delay: 0 },
+                { icon: Sun, val: "75", suffix: "MW+", label: "Solar Capacity", delay: 0 },
                 { icon: Globe, val: "8", suffix: "+", label: "Cities Covered", delay: 0.1 },
                 { icon: Users, val: "10", suffix: "+", label: "Happy Clients", delay: 0.2 },
                 { icon: BarChart, val: "100", suffix: "%", label: "Efficiency Increase", delay: 0.3 }
