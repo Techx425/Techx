@@ -172,7 +172,7 @@ export default function Projects() {
                     <div className="container text-center">
                         <div className="row g-4 grid-divider justify-content-center">
                             {[
-                                { title: "Need Our Services?", text: "Call: +92 321 7558101" },
+                                { title: "Need Our Services?", text: "Call: 051 6141110" },
                                 { title: "Work Hours", text: "Mon to Sat 08:00 - 17:00" },
                                 { title: "Email Us", text: "ceo@techx.com" }
                             ].map((item, idx) => (

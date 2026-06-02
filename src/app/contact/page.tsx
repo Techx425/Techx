@@ -146,7 +146,7 @@ export default function Contact() {
                                 <div className="row g-4">
                                     {[
                                         { title: "Head Office", icon: "icofont-location-pin", text: "4th Floor Anchor Acrade Block D, Naval Ancourage, Islamabad" },
-                                        { title: "Call Us", icon: "icofont-phone", text: "+92 321 7558101" },
+                                        { title: "Call Us", icon: "icofont-phone", text: "051 6141110" },
                                         { title: "Email Us", icon: "icofont-envelope", text: "ceo@techx.com" },
                                         { title: "Business Hours", icon: "icofont-clock-time", text: "Mon - Fri: 9:00 AM - 6:00 PM" }
                                     ].map((item, idx) => (
