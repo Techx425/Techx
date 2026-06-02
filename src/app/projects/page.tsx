@@ -14,7 +14,7 @@ const projects = [
     {
         id: 1,
         title: 'Textile Solar Plant',
-        logo: '/images/projects/sadaqat logo.jpeg',
+        logo: '/images/projects/sadaqat-logo.jpeg',
         capacity: '12 MW',
         location: 'Faisalabad',
         img: '/images/projects/textile1.jpeg',
@@ -24,7 +24,7 @@ const projects = [
     {
         id: 2,
         title: 'Cement Solar Plant',
-        logo: '/images/projects/dewan .jpeg',
+        logo: '/images/projects/dewan-logo.jpeg',
         capacity: '8 MW',
         location: 'Karachi',
         img: '/images/projects/deewan2.jpeg',
@@ -34,7 +34,7 @@ const projects = [
     {
         id: 3,
         title: 'Steel Solar Plant',
-        logo: '/images/projects/ittehad logo.jpeg',
+        logo: '/images/projects/ittehad-logo.jpeg',
         capacity: '5 MW',
         location: 'Lahore',
         img: '/images/projects/ittehad steel 1.jpeg',
@@ -44,7 +44,7 @@ const projects = [
     {
         id: 4,
         title: 'Motorway Solar',
-        logo: '/images/projects/moterway logo.jpeg',
+        logo: '/images/projects/motorway-logo.jpeg',
         capacity: '660 KW',
         location: 'Uch Shareef & Rajhana',
         img: ['/images/projects/moterway.webp', '/images/projects/projects-main.jpeg'] as any,
