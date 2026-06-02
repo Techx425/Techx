@@ -57,7 +57,7 @@ const projects = [
         logo: '/images/projects/motorway-logo.jpeg',
         capacity: '660 KW',
         location: 'Uch Shareef & Rajhana',
-        img: ['/images/projects/moterway.webp', '/images/projects/projects-main.jpeg'] as any,
+        img: ['/images/projects/moterway.webp', '/images/projects/motorway-site.jpeg'] as any,
         desc: 'Highway infrastructure solar power solution providing clean energy to motorway service areas and administrative buildings.',
         tags: ['Infrastructure', 'EPC Services', 'Solar PV', 'Grid Integration', 'O&M Services'],
     },
