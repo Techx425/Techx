@@ -14,6 +14,7 @@ const projects = [
     {
         id: 1,
         title: 'Textile Solar Plant',
+        logo: '/images/projects/sadaqat logo.jpeg',
         capacity: '12 MW',
         location: 'Faisalabad',
         img: '/images/projects/textile1.jpeg',
@@ -23,6 +24,7 @@ const projects = [
     {
         id: 2,
         title: 'Cement Solar Plant',
+        logo: '/images/projects/dewan .jpeg',
         capacity: '8 MW',
         location: 'Karachi',
         img: '/images/projects/deewan2.jpeg',
@@ -32,6 +34,7 @@ const projects = [
     {
         id: 3,
         title: 'Steel Solar Plant',
+        logo: '/images/projects/ittehad logo.jpeg',
         capacity: '5 MW',
         location: 'Lahore',
         img: '/images/projects/ittehad steel 1.jpeg',
@@ -136,7 +139,11 @@ export default function Projects() {
                                             {/* Title Row */}
                                             <div style={titleRowStyle}>
                                                 <h4 style={titleStyle}>{project.title}</h4>
-                                                <span style={badgeStyle}>&nbsp;</span>
+                                                {project.logo ? (
+                                                    <img src={project.logo} alt="Client Logo" style={{ height: '30px', objectFit: 'contain', maxWidth: '80px' }} />
+                                                ) : (
+                                                    <span style={badgeStyle}>&nbsp;</span>
+                                                )}
                                             </div>
 
                                             <div style={dividerStyle}></div>
