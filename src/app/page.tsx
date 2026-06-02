@@ -58,8 +58,10 @@ export default function Home() {
               <div className="row">
                 <div className="col-lg-12">
                   <div className="text-start">
-                    <motion.div className="col-lg-5" {...fadeInUp}>
-                      <p className="fs-20">At TECHX Pvt Ltd, we are driven to fulfill the energy needs of industrial and commercial users by providing solutions tailored to their needs. We help our clients source energy and power that works for their unique requirements and suits their budgets.</p>
+                    <motion.div className="col-lg-5 mb-3" {...fadeInUp}>
+                      <div className="bg-blur p-3 rounded-2" style={{ backgroundColor: 'rgba(0,0,0,0.4)' }}>
+                        <p className="fs-20 mb-0">At TECHX Pvt Ltd, we are driven to fulfill the energy needs of industrial and commercial users by providing solutions tailored to their needs. We help our clients source energy and power that works for their unique requirements and suits their budgets.</p>
+                      </div>
                     </motion.div>
                     <motion.h1
                       className="fs-50 text-uppercase fs-sm-10vw mb-4 lh-1"
