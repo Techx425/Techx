@@ -66,7 +66,7 @@ const projects = [
         title: 'Fuel Supply Network',
         logo: '/images/projects/ssgc.jpeg',
         capacity: 'N/A',
-        location: 'Nationwide',
+        location: 'Port Qasim karachi',
         img: '/images/services/core-energy-trading.webp',
         desc: 'Comprehensive LPG sourcing and distribution network across Pakistan, importing refined fuels from the Middle East.',
         tags: ['Fuel Trading', 'LPG', 'Distribution'],
