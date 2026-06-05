@@ -36,6 +36,7 @@ const services = [
         id: 4,
         slug: 'o-and-m',
         title: 'Operation & Management(O & M)',
+        titleLabel: <>Operation & Management <br/> (O & M)</>,
         desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.',
         img: '/images/services/O&M.jpeg',
     },
@@ -91,7 +92,7 @@ export default function Services() {
                                                         <img src="/images/misc/up-right-arrow.webp" className="w-100 p-20" alt="" />
                                                     </Link>
                                                 </div>
-                                                <h4>{service.title}</h4>
+                                                <h4>{(service as any).titleLabel || service.title}</h4>
                                                 <p className="mb-0 text-muted">{service.desc}</p>
                                             </div>
                                         </div>

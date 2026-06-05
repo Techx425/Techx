@@ -182,7 +182,7 @@ export default function Home() {
                 { title: 'Renewable Energy Solutions', slug: 'power-solutions', img: '/images/projects/deewan2.jpeg', desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.' },
                 { title: 'Fuel Trading', slug: 'energy-trading', img: 'core-energy-trading', desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.' },
                 { title: 'Renewable Energy Infrastructure', slug: 'energy-development', img: 'enerydevelopement', desc: 'Development, design and arranging funding for utility scale projects.' },
-                { title: 'Operation & Management(O & M)', slug: 'o-and-m', img: '/images/services/O&M.jpeg', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
+                { title: 'Operation & Management(O & M)', titleLabel: <>Operation & Management <br/> (O & M)</>, slug: 'o-and-m', img: '/images/services/O&M.jpeg', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
 
               ].map((service, i) => (
                 <SwiperSlide key={i}>
@@ -199,7 +199,7 @@ export default function Home() {
                             <img src="/images/misc/up-right-arrow.webp" className="w-100 p-20" alt="" />
                           </Link>
                         </div>
-                        <h4 className="mb-2">{service.title}</h4>
+                        <h4 className="mb-2">{(service as any).titleLabel || service.title}</h4>
                         <p className="mb-0 text-muted">{service.desc}</p>
                       </div>
                     </div>
