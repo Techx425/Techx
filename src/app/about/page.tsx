@@ -159,7 +159,7 @@ export default function About() {
                                 <div>Meet the leadership team driving TECHX's success in the energy sector.</div>
                             </div>
                             {[
-                                { name: "Engr. Saad Sikander", role: "Founder and CEO", img: "1" },
+                                { name: "Engr. Saad Sikander", role: "Founder and CEO", img: "1", email: "ceo@techx.com.pk" },
                                 { name: "Air Commodore (Retd.) Sikander Niaz (TI M)", role: <>Director Projects <br/> (WHRS & Hydrogen)</>, img: "2" },
                                 { name: "Mrs. Amina Sikander", role: "Board Member", img: "3" },
                                 { name: "Mr. Fahad Sikander", role: "Project Manager", img: "4", email: "pm@techx.com.pk" },
