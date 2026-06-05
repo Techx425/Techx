@@ -112,10 +112,10 @@ export default function Home() {
                 </motion.div>
               </div>
 
-              <div className="col-lg-6 d-flex flex-column justify-content-center">
+              <div className="col-lg-6 d-flex flex-column justify-content-center text-wrap text-break pe-lg-5">
                 <motion.div className="subtitle id-color mb-2" {...fadeInUp}>Solar Power for Smarter Future</motion.div>
-                <motion.h2 {...fadeInUp} transition={{ delay: 0.2 }}>Not Just a Vendor, We're Your Energy  <span className="op-3">Partner</span></motion.h2>
-                <motion.p {...fadeInUp} transition={{ delay: 0.3 }}>We work as partners with industries across Pakistan, to help them assess the right solution for their requirements. Our multidisciplinary expertise enables us to address complex challenges and drive innovation across the energy and power landscape.</motion.p>
+                <motion.h2 className="text-wrap" {...fadeInUp} transition={{ delay: 0.2 }}>Not Just a Vendor, We're Your Energy  <span className="op-3">Partner</span></motion.h2>
+                <motion.p className="text-wrap" {...fadeInUp} transition={{ delay: 0.3 }}>We work as partners with industries across Pakistan, to help them assess the right solution for their requirements. Our multidisciplinary expertise enables us to address complex challenges and drive innovation across the energy and power landscape.</motion.p>
 
                 <div className="border-bottom mb-4"></div>
 
