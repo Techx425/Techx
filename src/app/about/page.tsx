@@ -169,7 +169,7 @@ export default function About() {
                                 { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
                                 { name: "Mr. Asad Abbas", role: "Manager Admin and Maintenance", img: "4" },
                                 { name: "Engr. Noman", role: "Senior Manager Electrical", img: "4" },
-                                { name: "Engr.Ansar Abbas", role: "Electrical Supervision" },
+                                { name: "Engr.Ansar Abbas", role: "Electrical Supervisor" },
                                 { name: "Raja Azhar", role: "Senior Manager Operation", email: "azhar@techx.com.pk" },
                                 { name: "Engr Hashim Abbasi", role: "Assistant Manager" },
                                 { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" },
