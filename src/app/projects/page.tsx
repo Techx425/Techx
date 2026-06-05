@@ -77,7 +77,7 @@ const projects = [
         logo: '/images/projects/ssgc.jpeg',
         capacity: 'N/A',
         location: 'Gwadar',
-        img: '/images/background/1.webp',
+        img: '/images/projects/gawadar-image.jpeg',
         desc: 'Major port infrastructure development enabling large-scale energy imports and exports through the strategic Gwadar deep-sea port.',
         tags: ['Infrastructure', 'Port Development', 'Logistics'],
     },
