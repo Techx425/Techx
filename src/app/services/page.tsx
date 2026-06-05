@@ -35,7 +35,7 @@ const services = [
     {
         id: 4,
         slug: 'o-and-m',
-        title: 'O & M',
+        title: 'Operation & Management(O & M)',
         desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.',
         img: '/images/services/O&M.jpeg',
     },

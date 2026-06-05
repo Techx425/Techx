@@ -182,7 +182,7 @@ export default function Home() {
                 { title: 'Renewable Energy Solutions', slug: 'power-solutions', img: '/images/projects/deewan2.jpeg', desc: 'Import and installation of industrial scale solar plants under sale and PPA contracts.' },
                 { title: 'Fuel Trading', slug: 'energy-trading', img: 'core-energy-trading', desc: 'Sourcing refined and non-renewable fuels: LPG from Middle East.' },
                 { title: 'Renewable Energy Infrastructure', slug: 'energy-development', img: 'enerydevelopement', desc: 'Development, design and arranging funding for utility scale projects.' },
-                { title: 'O & M', slug: 'o-and-m', img: '/images/services/O&M.jpeg', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
+                { title: 'Operation & Management(O & M)', slug: 'o-and-m', img: '/images/services/O&M.jpeg', desc: 'Comprehensive Operations & Maintenance services to ensure maximum solar efficiency.' },
 
               ].map((service, i) => (
                 <SwiperSlide key={i}>
