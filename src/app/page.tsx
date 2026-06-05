@@ -367,9 +367,6 @@ export default function Home() {
                 <SwiperSlide key={idx}>
                   <Link href="/projects">
                     <div className="hover rounded-1 relative overflow-hidden text-light group shadow-lg aspect-video">
-                      <div className="abs p-40 top-0 z-3">
-                        <img src="/images/misc/up-right-arrow-white.webp" className="w-10 mb-3 group-hover:scale-110 transition-transform" alt="" />
-                      </div>
                       <div className="abs p-30 bottom-0 z-3">
                         <span className="badge bg-warning text-dark px-2 py-1 fs-10 uppercase fw-bold mb-2 d-inline-block">{project.category}</span>
                         <h4 className="mb-0 text-white">{project.title}</h4>
