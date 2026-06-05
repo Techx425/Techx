@@ -216,10 +216,9 @@ export default function Home() {
         {/* Services Swiper Section End */}
 
         {/* Ultra Modern Stats Section */}
-        <section className="parallax-section relative overflow-hidden py-24" style={{ backgroundImage: 'url(/images/background/2.webp)', backgroundColor: '#000' }}>
-          <div className="absolute inset-0 bg-black/85 z-0"></div>
+        <section className="bg-light relative overflow-hidden py-24">
           {/* Beautiful glowing orb effect */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/15 rounded-full blur-[120px] pointer-events-none z-0"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
           <div className="container relative z-10">
             <div className="row g-4 justify-content-center mb-5">
@@ -233,13 +232,13 @@ export default function Home() {
                   TechX Global Impact
                 </motion.div>
                 <motion.h2
-                  className="text-white mb-4 display-4 fw-bold"
+                  className="text-dark mb-4 display-4 fw-bold"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                 >
-                  Innovating the Energy <span className="text-primary glow-text">Landscape</span>
+                  Innovating the Energy <span className="id-color">Landscape</span>
                 </motion.h2>
               </div>
             </div>
@@ -252,21 +251,19 @@ export default function Home() {
               ].map((stat, idx) => (
                 <div key={idx} className="col-lg-4 col-md-6">
                   <motion.div
-                    className="glass-card p-5 text-center rounded-2 floating h-100 animate-gradient-border"
+                    className="bg-white p-5 text-center rounded-2 floating h-100 shadow-sm border border-light"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: stat.delay, duration: 0.8 }}
                   >
-                    <div className="radial-light top-50 start-50 translate-middle"></div>
-
                     <div className="mb-4 d-flex justify-content-center">
-                      <div className="p-3 rounded-circle bg-white/10 border border-white/20">
+                      <div className="p-3 rounded-circle bg-light border border-light">
                         <stat.icon className="id-color" size={32} />
                       </div>
                     </div>
 
-                    <h2 className="glow-number fs-60 mb-2">
+                    <h2 className="fs-60 mb-2 id-color">
                       <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -277,7 +274,7 @@ export default function Home() {
                       {stat.suffix}
                     </h2>
 
-                    <p className="text-white/60 text-uppercase fw-bold ls-2 fs-14 mb-0">
+                    <p className="text-secondary text-uppercase fw-bold ls-2 fs-14 mb-0">
                       {stat.label}
                     </p>
                   </motion.div>
