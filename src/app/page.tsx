@@ -360,11 +360,12 @@ export default function Home() {
             >
               {[
                 { title: 'Textile Solar Plant', category: 'Solar Power Projects', img: '/images/projects/textile1.jpeg' },
-                { title: 'Cement Solar Plant', category: 'Solar Power Projects', img: '/images/projects/deewan2.jpeg' },
+                { title: 'Cement Solar Plant (Karachi)', category: 'Solar Power Projects', img: '/images/projects/deewan2.jpeg' },
+                { title: 'Cement Solar Plant (Hattar)', category: 'Solar Power Projects', img: '/images/projects/projects-main.jpeg' },
                 { title: 'Steel Solar Plant', category: 'Solar Power Projects', img: '/images/projects/ittehad steel 1.jpeg' },
-                { title: 'Uch Shareef Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/moterway.webp' },
-                { title: 'Rajhana Motorway Solar Plant', category: 'Solar Power Projects', img: '/images/projects/5.webp' },
-                { title: 'Fuel Supply Network', category: 'Fuel Trading Projects', img: '/images/projects/6.webp' }
+                { title: 'Motorway Solar', category: 'Solar Power Projects', img: '/images/projects/moterway.webp' },
+                { title: 'Fuel Supply Network', category: 'Fuel Trading Projects', img: '/images/services/core-energy-trading.webp' },
+                { title: 'Energy Storage Infrastructure', category: 'Infrastructure', img: '/images/projects/gawadar-image.jpeg' }
               ].map((project, idx) => (
                 <SwiperSlide key={idx}>
                   <Link href="/projects">
