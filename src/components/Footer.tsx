@@ -69,7 +69,7 @@ export default function Footer() {
                             <div className="fw-bold text-white d-flex align-items-center">
                                 <i className="icofont-envelope me-2 id-color"></i><span>Email Us</span>
                             </div>
-                            ceo@techx.com
+                            sales@techx.com.pk
                         </div>
                     </div>
                 </div>

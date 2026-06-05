@@ -147,7 +147,7 @@ export default function Contact() {
                                     {[
                                         { title: "Head Office", icon: "icofont-location-pin", text: "4th Floor Anchor Acrade Block D, Naval Ancourage, Islamabad" },
                                         { title: "Call Us", icon: "icofont-phone", text: "051 6141110" },
-                                        { title: "Email Us", icon: "icofont-envelope", text: "ceo@techx.com" },
+                                        { title: "Email Us", icon: "icofont-envelope", text: "sales@techx.com.pk" },
                                         { title: "Business Hours", icon: "icofont-clock-time", text: "Mon - Fri: 9:00 AM - 6:00 PM" }
                                     ].map((item, idx) => (
                                         <motion.div

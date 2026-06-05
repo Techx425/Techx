@@ -110,7 +110,7 @@ export default function Services() {
                                     {[
                                         { title: "Need Our Services?", text: "Call: 051 6141110" },
                                         { title: "Message Us", text: "We Are Always Ready" },
-                                        { title: "Email Us", text: "ceo@techx.com" }
+                                        { title: "Email Us", text: "sales@techx.com.pk" }
                                     ].map((item, idx) => (
                                         <motion.div
                                             key={idx}

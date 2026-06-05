@@ -199,7 +199,7 @@ export default function Projects() {
                             {[
                                 { title: "Need Our Services?", text: "Call: 051 6141110" },
                                 { title: "Work Hours", text: "Mon to Sat 08:00 - 17:00" },
-                                { title: "Email Us", text: "ceo@techx.com" }
+                                { title: "Email Us", text: "sales@techx.com.pk" }
                             ].map((item, idx) => (
                                 <motion.div
                                     key={idx}

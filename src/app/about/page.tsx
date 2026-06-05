@@ -191,7 +191,7 @@ export default function About() {
                                             <h4 className="mb-0">{member.name}</h4>
                                             <p className="mb-3 text-muted">{member.role}</p>
                                             <div className="social-icons s1 mt-3">
-                                                <Link href={`mailto:${(member as any).email || (member.role === 'Founder and CEO' ? 'ceo@techx.com' : 'info@techx.com')}`}><i className="fa-regular fa-envelope"></i></Link>
+                                                <Link href={`mailto:${(member as any).email || (member.role === 'Founder and CEO' ? 'sales@techx.com.pk' : 'info@techx.com')}`}><i className="fa-regular fa-envelope"></i></Link>
                                                 {member.role === 'Founder and CEO' && (
                                                     <Link href="https://www.linkedin.com/in/saad-sikander-659384193?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank"><i className="fa-brands fa-linkedin-in"></i></Link>
                                                 )}
@@ -255,7 +255,7 @@ export default function About() {
                             {[
                                 { title: "Need Our Services?", text: "Call: 051 6141110" },
                                 { title: "Work Hours", text: "Mon to Sat 08:00 - 17:00" },
-                                { title: "Email Us", text: "ceo@techx.com" }
+                                { title: "Email Us", text: "sales@techx.com.pk" }
                             ].map((item, idx) => (
                                 <motion.div
                                     key={idx}
