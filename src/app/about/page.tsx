@@ -164,7 +164,7 @@ export default function About() {
                                 { name: "Mrs. Amina Sikander", role: "Board Member", img: "3" },
                                 { name: "Mr. Fahad Sikander", role: "Project Manager", img: "4", email: "pm@techx.com.pk" },
                                 { name: "Engr. Umair ur Rehman", role: <>Snr. Mgr and CTO <br/> Solar Division</>, img: "4" },
-                                { name: "Dr. Atif Naveed Khan", role: "Director Technical and Projects", img: "4" },
+                                { name: "Dr. Atif Naveed Khan", role: <>Director Technical <br/> Solar Division</>, img: "4" },
                                 { name: "Mr. Rizwan", role: "Senior manager Coordination", img: "4" },
                                 { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
                                 { name: "Mr. Asad Abbas", role: "Manager Admin and Maintenance", img: "4" },
