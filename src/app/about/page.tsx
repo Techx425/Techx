@@ -160,17 +160,17 @@ export default function About() {
                             </div>
                             {[
                                 { name: "Engr. Saad Sikander", role: "Founder and CEO", img: "1" },
-                                { name: "Air Commodore (Retd.) Sikander Niaz (TI M)", role: "Chairman", img: "2" },
+                                { name: "Air Commodore (Retd.) Sikander Niaz (TI M)", role: <>Director Projects <br/> (WHRS & Hydrogen)</>, img: "2" },
                                 { name: "Mrs. Amina Sikander", role: "Board Member", img: "3" },
                                 { name: "Mr. Fahad Sikander", role: "Project Manager", img: "4", email: "pm@techx.com.pk" },
-                                { name: "Engr. Umair ur Rehman", role: "Snr. Mgr and CTO", img: "4" },
+                                { name: "Engr. Umair ur Rehman", role: <>Snr. Mgr and CTO <br/> Solar Division</>, img: "4" },
                                 { name: "Dr. Atif Naveed Khan", role: "Director Technical and Projects", img: "4" },
                                 { name: "Mr. Rizwan", role: "Senior manager Coordination", img: "4" },
                                 { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
                                 { name: "Mr. Asad Abbas", role: "Manager Admin and Maintenance", img: "4" },
-                                { name: "Engr. Noman", role: "Manager Electrical", img: "4" },
+                                { name: "Engr. Noman", role: "Senior Manager Electrical", img: "4" },
                                 { name: "Engr.Ansar Abbas", role: "Electrical Supervision" },
-                                { name: "Raja Azhar", role: "Manager Operatiom", email: "azhar@techx.com.pk" },
+                                { name: "Raja Azhar", role: "Senior Manager Operation", email: "azhar@techx.com.pk" },
                                 { name: "Engr Hashim Abbasi", role: "Assistant Manager" },
                                 { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" },
                                 { name: "Muhammad Abdullah", role: "Web Designer", email: "developer@techx.com.pk" }
