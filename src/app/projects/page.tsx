@@ -49,7 +49,7 @@ const projects = [
         location: 'Faisalabad',
         img: '/images/projects/ittehad steel 1.jpeg',
         desc: 'Specialized electrical engineering and maintenance services for Ittehad Steel\'s on-site solar generation facility.',
-        tags: ['O&M Services', 'Electrical Engineering', 'Solar PV'],
+        tags: ['EPC Services', 'O&M Services', 'Grid Integration'],
     },
     {
         id: 4,
@@ -59,7 +59,7 @@ const projects = [
         location: 'Uch Shareef & Rajhana',
         img: ['/images/projects/moterway.webp', '/images/projects/motorway-site.jpeg'] as any,
         desc: 'Highway infrastructure solar power solution providing clean energy to motorway service areas and administrative buildings.',
-        tags: ['Infrastructure', 'EPC Services', 'Solar PV', 'Grid Integration', 'O&M Services'],
+        tags: ['EPC Services', 'O&M Services', 'Grid Integration'],
     },
     {
         id: 6,
