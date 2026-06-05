@@ -402,7 +402,7 @@ export default function Home() {
                 <div className="accordion s2">
                   {[
                     { q: "How does solar energy work?", a: "Solar panels absorb sunlight using PV cells, which convert it into DC electricity. An inverter then converts it to AC for your home." },
-                    { q: "Will solar panels reduce my bills?", a: "Absolutely. Most customers see an immediate reduction in utility costs, often paying off the system in 5-7 years." },
+                    { q: "Will solar panels reduce my bills?", a: "Absolutely. Most customers see an immediate reduction in utility costs, often paying off the system in 3-4 years." },
                     { q: "What happens on cloudy days?", a: "Solar panels still generate electricity in diffuse light, though at lower efficiency. Your battery storage or grid connection ensures power." },
                     { q: "Does the roof need replacing first?", a: "We inspect your roof during the consultation. If it needs replacement soon, we recommend doing it before install." }
                   ].map((faq, idx) => (
