@@ -29,7 +29,7 @@ const projects = [
         location: 'Karachi',
         img: '/images/projects/deewan2.jpeg',
         desc: 'Full-scale industrial solar solution for Dewan Cement\'s manufacturing facility, reducing grid dependency and cutting operational energy costs.',
-        tags: ['EPC Services', 'Industrial Solar', 'Energy Audit'],
+        tags: ['EPC Services', 'O&M Services', 'Grid Integration'],
     },
     {
         id: 21,
@@ -39,7 +39,7 @@ const projects = [
         location: 'Hattar',
         img: '/images/projects/projects-main.jpeg',
         desc: "Full-scale industrial solar solution for Dewan Cement's manufacturing facility, reducing grid dependency and cutting operational energy costs.",
-        tags: ['EPC Services', 'Industrial Solar', 'Energy Audit'],
+        tags: ['EPC Services', 'O&M Services', 'Grid Integration'],
     },
     {
         id: 3,
