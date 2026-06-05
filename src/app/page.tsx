@@ -108,7 +108,7 @@ export default function Home() {
             <div className="row gy-4 gx-5 align-items-stretch">
               <div className="col-lg-6">
                 <motion.div className="h-100 relative overflow-hidden rounded-1 soft-shadow" {...scaleIn}>
-                  <img src="/images/background/vendor-img.jpeg" className="w-100 h-100 hover-scale-1-2 transition-all" style={{ objectFit: 'cover' }} alt="" />
+                  <img src="/images/projects/projects-main.jpeg" className="w-100 h-100 hover-scale-1-2 transition-all" style={{ objectFit: 'contain' }} alt="" />
                 </motion.div>
               </div>
 
