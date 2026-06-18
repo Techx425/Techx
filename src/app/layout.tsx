@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description: "TechX - Ecology & Solar Energy Solutions",
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
