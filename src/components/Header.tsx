@@ -84,7 +84,7 @@ export default function Header() {
                                 </div>
                             </div>
                             <div className="de-flex-col header-col-mid">
-                                <ul id="mainmenu" style={{ display: isMobileMenuOpen ? 'block' : undefined }}>
+                                <ul id="mainmenu" className={isMobileMenuOpen ? 'show' : ''}>
                                     <li>
                                         <Link className="menu-item" href="/">Home</Link>
                                     </li>
@@ -105,7 +105,7 @@ export default function Header() {
                             <div className="de-flex-col">
                                 <div className="menu_side_area">
                                     <Link href="/contact" className="btn-main btn-line fx-slide hover-white"><span>Get a Quote</span></Link>
-                                    <span id="menu-btn" onClick={toggleMobileMenu} className={isMobileMenuOpen ? 'active' : ''}></span>
+                                    <span id="menu-btn" onClick={toggleMobileMenu} className={isMobileMenuOpen ? 'menu-open' : ''}></span>
                                 </div>
 
                                 <div id="btn-extra">

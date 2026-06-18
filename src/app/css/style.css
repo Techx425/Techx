@@ -13622,6 +13622,10 @@ img {
     z-index: 1000;
     top: 0;
     right: 0;
+    color: #222;
+  }
+  header.header-mobile #menu-btn {
+    color: #fff;
   }
 
   .inner-padding {
@@ -13634,12 +13638,22 @@ img {
   }
 
   .header-col-mid #mainmenu {
-    display: none;
+    display: none !important;
     position: absolute;
     top: 90px;
-    width: 100%;
-    padding: 0 0 0 0;
+    width: calc(100% - 40px);
+    padding: 20px;
     left: 20px;
+    background: #222;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 1001;
+  }
+  .header-col-mid #mainmenu.show {
+    display: block !important;
+  }
+  .header-col-mid #mainmenu li a {
+    color: #ffffff !important;
   }
 
   #mainmenu>li::before {
