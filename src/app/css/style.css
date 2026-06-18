@@ -13634,6 +13634,7 @@ img {
   }
 
   .header-col-mid #mainmenu {
+    display: none;
     position: absolute;
     top: 90px;
     width: 100%;
