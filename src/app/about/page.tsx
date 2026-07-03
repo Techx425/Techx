@@ -166,11 +166,11 @@ export default function About() {
                                 { name: "Engr. Umair ur Rehman", role: <>Snr. Mgr and CTO <br/> Solar Division</>, img: "4" },
                                 { name: "Dr. Atif Naveed Khan", role: <>Director Technical <br/> Solar Division</>, img: "4" },
                                 { name: "Engr. Noman", role: "Senior Manager Electrical", img: "4" },
-                                { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
+                                { name: "Raja Azhar", role: "Senior Manager Operation", email: "azhar@techx.com.pk" },
                                 { name: "Mr. Asad Abbas", role: "Manager Admin and Maintenance", img: "4" },
                                 { name: "Mr. Rizwan", role: "Senior manager Coordination", img: "4" },
                                 { name: "Engr.Ansar Abbas", role: "Electrical Supervisor" },
-                                { name: "Raja Azhar", role: "Senior Manager Operation", email: "azhar@techx.com.pk" },
+                                { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
                                 { name: "Engr Hashim Abbasi", role: "Design Engineer" },
                                 { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" },
                                 { name: "Muhammad Abdullah", role: "Web Designer", email: "developer@techx.com.pk" }
