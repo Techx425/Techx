@@ -173,7 +173,7 @@ export default function About() {
                                 { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
                                 { name: "Engr Hashim Abbasi", role: "Design Engineer" },
                                 { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" },
-                                { name: "Muhammad Abdullah", role: "Web Designer", email: "developer@techx.com.pk" }
+                                { name: "Muhammad Abdullah", role: "IT Manager", email: "developer@techx.com.pk" }
 
 
 
