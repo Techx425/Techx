@@ -170,10 +170,10 @@ export default function About() {
                                 { name: "Mr. Rizwan", role: "Senior manager Coordination", img: "4" },
                                 { name: "Engr. Jamshid", role: "Resident engr", img: "4" },
                                 { name: "Engr. Saad Haseeb", role: "Resident engr", img: "4" },
-                                { name: "Mr. Asad Abbas", role: "Manager Admin and Maintenance", img: "4" },
+                                { name: "Engr Hashim Abbasi", role: "Design Engineer" },
                                 { name: "Engr.Ansar Abbas", role: "Electrical Supervisor" },
                                 { name: "Mr. Aamir", role: "Senior Supervisor", img: "4" },
-                                { name: "Engr Hashim Abbasi", role: "Design Engineer" },
+                                { name: "Mr. Asad Abbas", role: "Manager Admin and Maintenance", img: "4" },
                                 { name: "Isha Azeem", role: "Social Media Manager", email: "sales@techx.com.pk" },
                                 { name: "Muhammad Abdullah", role: "IT Manager", email: "developer@techx.com.pk" }
 
