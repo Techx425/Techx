@@ -116,6 +116,21 @@ const services = [
                     'SCADA commissioning',
                     'Performance testing'
                 ]
+            },
+            {
+                title: 'Operation & Maintenance (O&M)',
+                desc: 'TechX\'s O&M services keep solar assets performing at peak efficiency through preventive maintenance, drone-based thermography inspections, and continuous performance monitoring across Pakistan.',
+                subItems: [
+                    'Preventive maintenance',
+                    'Corrective maintenance',
+                    'Performance monitoring',
+                    'Solar panel cleaning & maintenance schedule',
+                    'Annual inspections',
+                    'Thermography',
+                    'Drone inspections',
+                    'String fault analysis',
+                    'Warranty support'
+                ]
             }
         ]
     },
