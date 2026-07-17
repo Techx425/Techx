@@ -131,6 +131,21 @@ const services = [
                     'String fault analysis',
                     'Warranty support'
                 ]
+            },
+            {
+                title: 'Audits & Troubleshooting',
+                desc: 'Many operational solar plants underperform due to hidden faults. TechX\'s performance audits identify root causes from string mismatch to inverter faults and recommend system optimization strategies.',
+                subItems: [
+                    'Performance audit',
+                    'Energy loss investigation',
+                    'Root cause analysis',
+                    'String mismatch analysis',
+                    'Hotspot investigation',
+                    'Inverter fault diagnosis',
+                    'SCADA troubleshooting',
+                    'Module degradation assessment',
+                    'System optimization recommendations'
+                ]
             }
         ]
     },
