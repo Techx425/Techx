@@ -38,7 +38,7 @@ const services = [
             'Feasibility Studies', 
             'Regulatory Approvals',
             { 
-                title: '4. Energy Analysis & Feasibility Studies', 
+                title: 'Energy Analysis & Feasibility Studies', 
                 desc: 'TechX conducts comprehensive solar energy analysis using PVsyst and HelioScope, delivering accurate energy yield simulations, performance ratio assessments, and financial feasibility studies to ensure bankable, high-return solar investments.',
                 subItems: [
                     'Energy yield simulation', 
@@ -52,7 +52,7 @@ const services = [
                 ] 
             },
             {
-                title: '5. Site Survey Services',
+                title: 'Site Survey Services',
                 desc: 'Our site survey team combines drone technology with on-ground inspection to assess roof conditions, shading patterns, and existing electrical infrastructure; the foundation for accurate solar system design.',
                 subItems: [
                     'Drone survey',
