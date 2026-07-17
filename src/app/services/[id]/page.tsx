@@ -185,6 +185,19 @@ const services = [
                     'Monthly performance reports',
                     'Asset management systems'
                 ]
+            },
+            {
+                title: 'Specialized Consulting',
+                desc: 'From captive power planning to solar-plus-storage optimization, TechX provides specialized consulting for complex energy configurations, including open access feasibility and carbon emission reporting.',
+                subItems: [
+                    'Captive power planning',
+                    'Solar + Diesel optimization',
+                    'Solar + Grid optimization',
+                    'Solar + BESS optimization',
+                    'Wheeling studies',
+                    'Open access feasibility',
+                    'Carbon emission reduction reports'
+                ]
             }
         ]
     },
