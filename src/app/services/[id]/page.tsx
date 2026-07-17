@@ -160,6 +160,18 @@ const services = [
                     'Financial analysis',
                     'Vendor evaluation'
                 ]
+            },
+            {
+                title: 'Training Services',
+                desc: 'TechX offers hands-on solar design, AutoCAD, and electrical safety training programs, equipping engineers and technicians with practical, industry-relevant skills.',
+                subItems: [
+                    'Solar design training',
+                    'AutoCAD training',
+                    'Installation training',
+                    'O&M training',
+                    'Electrical safety training',
+                    'Net metering process training'
+                ]
             }
         ]
     },
