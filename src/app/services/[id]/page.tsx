@@ -74,6 +74,18 @@ const services = [
                     'BOQ preparation',
                     'Technical specifications'
                 ]
+            },
+            {
+                title: 'Procurement Support',
+                desc: 'For clients managing their own equipment purchase, TechX offers independent technical assistance: from BOQ verification to Factory Acceptance Testing, ensuring quality and value at every stage.',
+                subItems: [
+                    'BOQ verification',
+                    'Vendor comparison',
+                    'Technical bid evaluation',
+                    'Factory Acceptance Test (FAT) witnessing',
+                    'Material inspection',
+                    'Quality assurance'
+                ]
             }
         ]
     },
