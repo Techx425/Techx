@@ -3,6 +3,7 @@
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -31,7 +32,26 @@ const services = [
         title: 'Renewable Energy Infrastructure',
         desc: 'TechX is at the forefront of Renewable Energy Infrastructure, working on utility-scale renewable energy projects. We handle the entire lifecycle of a project—from conceptual design and feasibility studies to arranging international funding and regulatory approvals. Our goal is to contribute to Pakistan\'s energy security through large-scale sustainable initiatives.',
         img: '/images/services/enerydevelopement.webp',
-        features: ['Utility-scale Project Management', 'Financial Structuring', 'Feasibility Studies', 'Regulatory Approvals']
+        features: [
+            'Utility-scale Project Management', 
+            'Financial Structuring', 
+            'Feasibility Studies', 
+            'Regulatory Approvals',
+            { 
+                title: '5. Energy Analysis', 
+                subItems: [
+                    'Energy yield simulation', 
+                    'Generation estimation', 
+                    'Performance Ratio (PR)', 
+                    'Loss analysis', 
+                    'Shading analysis', 
+                    'Financial feasibility', 
+                    'Payback calculation', 
+                    'Battery sizing', 
+                    'Peak shaving study'
+                ] 
+            }
+        ]
     },
     {
         slug: 'o-and-m',
@@ -45,6 +65,12 @@ const services = [
 export default function ServiceDetail() {
     const params = useParams();
     const slug = params.id;
+    const [openFeature, setOpenFeature] = useState<number | null>(null);
+
+    const toggleFeature = (idx: number) => {
+        if (openFeature === idx) setOpenFeature(null);
+        else setOpenFeature(idx);
+    };
 
     const service = services.find(s => s.slug === slug);
 
@@ -95,14 +121,39 @@ export default function ServiceDetail() {
                                 <div className="spacer-single"></div>
 
                                 <div className="row g-4 text-start">
-                                    {service.features.map((feature, idx) => (
-                                        <div key={idx} className="col-md-6">
-                                            <div className="d-flex align-items-center shadow-sm p-3 rounded-1 border-start border-4 border-color bg-light">
-                                                <i className="icofont-check-circled id-color fs-24 me-3"></i>
-                                                <h5 className="mb-0 fs-16">{feature}</h5>
+                                    {service.features.map((feature, idx) => {
+                                        const isObject = typeof feature === 'object' && feature !== null;
+                                        const title = isObject ? (feature as any).title : feature;
+                                        const subItems = isObject ? (feature as any).subItems : [];
+                                        const isOpen = openFeature === idx;
+
+                                        return (
+                                            <div key={idx} className="col-md-6">
+                                                <div 
+                                                    className="shadow-sm p-3 rounded-1 border-start border-4 border-color bg-light h-100"
+                                                    style={isObject ? { cursor: 'pointer' } : {}}
+                                                    onClick={isObject ? () => toggleFeature(idx) : undefined}
+                                                >
+                                                    <div className="d-flex align-items-center">
+                                                        <i className="icofont-check-circled id-color fs-24 me-3"></i>
+                                                        <h5 className="mb-0 fs-16 flex-grow-1">{title as string}</h5>
+                                                        {isObject && (
+                                                            <i className={`icofont-rounded-${isOpen ? 'up' : 'down'} ms-2`}></i>
+                                                        )}
+                                                    </div>
+                                                    {isObject && isOpen && (
+                                                        <div className="mt-3 ps-4 pt-2">
+                                                            <ul className="list-unstyled mb-0">
+                                                                {subItems.map((item: string, i: number) => (
+                                                                    <li key={i} className="mb-2"><i className="icofont-long-arrow-right id-color me-2"></i>{item}</li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    )}
+                                                </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
 
                                 <div className="spacer-single"></div>
