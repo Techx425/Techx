@@ -62,6 +62,18 @@ const services = [
                     'Utility data collection',
                     'Existing electrical assessment'
                 ]
+            },
+            {
+                title: 'Grid Compliance & Documentation',
+                desc: 'TechX manages the complete net metering and grid compliance process required by Pakistan\'s DISCOs and NEPRA, preparing protection study reports, technical specifications, and BOQs to keep projects fully compliant.',
+                subItems: [
+                    'Net metering documentation',
+                    'Protection study reports',
+                    'Grid compliance reports',
+                    'Electrical calculations',
+                    'BOQ preparation',
+                    'Technical specifications'
+                ]
             }
         ]
     },
