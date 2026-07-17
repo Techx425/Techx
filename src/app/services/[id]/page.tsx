@@ -101,6 +101,21 @@ const services = [
                     'Commissioning witness',
                     'Final acceptance inspection'
                 ]
+            },
+            {
+                title: 'Testing & Commissioning',
+                desc: 'Before any solar plant goes live, TechX performs rigorous pre-commissioning testing including IV curve, insulation resistance, and SCADA commissioning to guarantee safe, optimal performance from day one.',
+                subItems: [
+                    'Pre-commissioning inspection',
+                    'IV curve testing',
+                    'Insulation resistance testing',
+                    'Earth resistance testing',
+                    'Continuity testing',
+                    'Relay testing',
+                    'Inverter commissioning',
+                    'SCADA commissioning',
+                    'Performance testing'
+                ]
             }
         ]
     },
