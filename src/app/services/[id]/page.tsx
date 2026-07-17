@@ -38,7 +38,8 @@ const services = [
             'Feasibility Studies', 
             'Regulatory Approvals',
             { 
-                title: '5. Energy Analysis', 
+                title: '4. Energy Analysis & Feasibility Studies', 
+                desc: 'TechX conducts comprehensive solar energy analysis using PVsyst and HelioScope, delivering accurate energy yield simulations, performance ratio assessments, and financial feasibility studies to ensure bankable, high-return solar investments.',
                 subItems: [
                     'Energy yield simulation', 
                     'Generation estimation', 
@@ -47,7 +48,6 @@ const services = [
                     'Shading analysis', 
                     'Financial feasibility', 
                     'Payback calculation', 
-                    'Battery sizing', 
                     'Peak shaving study'
                 ] 
             }
@@ -124,6 +124,7 @@ export default function ServiceDetail() {
                                     {service.features.map((feature, idx) => {
                                         const isObject = typeof feature === 'object' && feature !== null;
                                         const title = isObject ? (feature as any).title : feature;
+                                        const desc = isObject ? (feature as any).desc : null;
                                         const subItems = isObject ? (feature as any).subItems : [];
                                         const isOpen = openFeature === idx;
 
@@ -142,7 +143,8 @@ export default function ServiceDetail() {
                                                         )}
                                                     </div>
                                                     {isObject && isOpen && (
-                                                        <div className="mt-3 ps-4 pt-2">
+                                                        <div className="mt-3 ps-4 pt-3 border-top">
+                                                            {desc && <p className="mb-3 text-muted lh-base">{desc}</p>}
                                                             <ul className="list-unstyled mb-0">
                                                                 {subItems.map((item: string, i: number) => (
                                                                     <li key={i} className="mb-2"><i className="icofont-long-arrow-right id-color me-2"></i>{item}</li>
