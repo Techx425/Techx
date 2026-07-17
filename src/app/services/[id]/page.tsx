@@ -77,11 +77,13 @@ const services = [
 export default function ServiceDetail() {
     const params = useParams();
     const slug = params.id;
-    const [openFeature, setOpenFeature] = useState<number | null>(null);
+    const [openFeatures, setOpenFeatures] = useState<number[]>([]);
 
     const toggleFeature = (idx: number) => {
-        if (openFeature === idx) setOpenFeature(null);
-        else setOpenFeature(idx);
+        setOpenFeatures(prev => {
+            const current = Array.isArray(prev) ? prev : [];
+            return current.includes(idx) ? current.filter(i => i !== idx) : [...current, idx];
+        });
     };
 
     const service = services.find(s => s.slug === slug);
@@ -138,12 +140,12 @@ export default function ServiceDetail() {
                                         const title = isObject ? (feature as any).title : feature;
                                         const desc = isObject ? (feature as any).desc : null;
                                         const subItems = isObject ? (feature as any).subItems : [];
-                                        const isOpen = openFeature === idx;
+                                        const isOpen = openFeatures.includes(idx);
 
                                         return (
                                             <div key={idx} className="col-md-6">
                                                 <div 
-                                                    className="shadow-sm p-3 rounded-1 border-start border-4 border-color bg-light h-100"
+                                                    className="shadow-sm p-3 rounded-1 border-start border-4 border-color bg-light"
                                                     style={isObject ? { cursor: 'pointer' } : {}}
                                                     onClick={isObject ? () => toggleFeature(idx) : undefined}
                                                 >
