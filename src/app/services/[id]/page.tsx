@@ -86,6 +86,21 @@ const services = [
                     'Material inspection',
                     'Quality assurance'
                 ]
+            },
+            {
+                title: "Owner's Engineer Services",
+                desc: "Acting as the client's technical representative, TechX's Owner's Engineer services protect investor interests throughout EPC execution; from design review to final commissioning.",
+                subItems: [
+                    'Solar system design review',
+                    'Drawing approval',
+                    'Site supervision',
+                    'Quality inspections',
+                    'Progress monitoring',
+                    'Contractor management',
+                    'Punch list preparation',
+                    'Commissioning witness',
+                    'Final acceptance inspection'
+                ]
             }
         ]
     },
