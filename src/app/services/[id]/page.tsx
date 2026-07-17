@@ -172,6 +172,19 @@ const services = [
                     'Electrical safety training',
                     'Net metering process training'
                 ]
+            },
+            {
+                title: 'Software & Digital Services',
+                desc: 'TechX develops custom SCADA and remote monitoring dashboards, giving clients real-time visibility into plant performance, alarms, and energy analytics from anywhere.',
+                subItems: [
+                    'Remote monitoring setup',
+                    'SCADA development',
+                    'Dashboard creation',
+                    'Energy analytics',
+                    'Alarm configuration',
+                    'Monthly performance reports',
+                    'Asset management systems'
+                ]
             }
         ]
     },
