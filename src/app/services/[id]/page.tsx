@@ -146,6 +146,20 @@ const services = [
                     'Module degradation assessment',
                     'System optimization recommendations'
                 ]
+            },
+            {
+                title: 'Battery Energy Storage System (BESS) Consulting',
+                desc: 'As demand for energy storage grows across Pakistan, TechX offers dedicated BESS consulting covering feasibility, battery sizing, and demand charge reduction studies for commercial and industrial clients.',
+                subItems: [
+                    'BESS feasibility study',
+                    'Battery sizing',
+                    'Peak shaving analysis',
+                    'Demand charge reduction study',
+                    'Backup duration analysis',
+                    'EMS design',
+                    'Financial analysis',
+                    'Vendor evaluation'
+                ]
             }
         ]
     },
