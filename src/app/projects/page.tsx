@@ -152,11 +152,6 @@ export default function Projects() {
                                             {/* Title Row */}
                                             <div style={titleRowStyle}>
                                                 <h4 style={titleStyle}>{project.title}</h4>
-                                                {project.logo ? (
-                                                    <img src={project.logo} alt="Client Logo" style={{ height: '30px', objectFit: 'contain', maxWidth: '80px' }} />
-                                                ) : (
-                                                    <span style={badgeStyle}>&nbsp;</span>
-                                                )}
                                             </div>
 
                                             <div style={dividerStyle}></div>
